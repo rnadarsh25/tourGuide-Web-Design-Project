@@ -1,0 +1,212 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+#main{
+    width: 99.7%;
+    border: transparent;
+    margin: 0px;
+    padding: 0px;
+}
+#header{
+    float: left;
+    border: transparent;
+    border-bottom: 10px solid #00CD66;
+    width: 100.15%;
+}
+#heading{
+    float: left;
+    width: 28%;
+    border: transparent;
+    color: #00CD66;
+    font-size: 20px;
+    margin-left: 1px;
+    font-family: 'Play', sans-serif;
+/* font-family: 'Exo', sans-serif;*/
+    /*font-family: 'Satisfy', cursive;*/
+    /*font-family: 'Great Vibes', cursive;*/
+    /*font-family: 'Orbitron', sans-serif;*/
+    /*font-family: 'Playfair Display SC', serif;*/
+    font-family: 'Prata', serif;
+    /*font-family: 'Arapey', serif;*/
+    /*font-family: 'Tangerine', cursive;*/
+}
+#para1{
+    /*font-family: 'Tangerine', cursive;*/
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+
+}
+#search_box{
+    text-align: center;
+    width: 42%;
+    float: left;
+    border: transparent;
+    height: 84px;
+    text-align: center;
+}
+#search{
+    width: 500px;
+    height: 51px;
+    line-height: 51px;
+    border: 1px solid #00CD66;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 0px 0px 0px 10px;
+    margin-top: 15px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    outline: none;
+}
+#login_div{
+    text-align: right;
+    width: 29.5%;
+    float: left;
+    border: transparent;
+}
+#login{
+    width: 150px;
+    height: 84px;
+    line-height: 84px;
+    background: transparent;
+    border: transparent;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: darkgreen;
+    font-weight: bold;
+    outline: none;
+    margin-right: -5px;
+}
+#login:hover{
+    background: darkgreen;
+    cursor: pointer;
+    color: white;
+}
+
+#btns{
+    border: transparent;
+    width: 95%;
+    float: left;
+}
+#back_btn{
+    float: left;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background: #df293a;
+    border: transparent;
+    margin: 10px 0px 10px 5px;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+#back_btn:hover{
+    cursor: pointer;
+}
+#left{
+    float: left;
+    height: 172rem;
+    border-right: 15px solid #00CD66;
+    width: 0px;
+    border-top-right-radius: 30%;  
+}
+#right{
+    float: right;
+    height: 172rem;
+    border-right: 15px solid #00CD66;
+    width: 0px;
+    margin-right:-2px;
+    border-top-left-radius: 30%; 
+}
+.images_div{
+    margin-left: 5px;
+    margin-top: 2px;
+    width: 407px;
+    height: 300px;
+    border: transparent;
+    float: left;
+}
+.images_div2{
+    margin-left: 5px;
+    margin-top: 2px;
+    width: 820px;
+    height: 600px;
+    border: transparent;
+    float: left;
+}
+.images_div3{
+    margin-right: 10px;
+    margin-top: 3px;
+    width: 820px;
+    height: 603px;
+    border: transparent;
+    float: right;
+}
+.images_div4{
+    margin-left: 5px;
+    margin-top: 3px;
+    width: 77.1rem;
+    height: 740px;
+    border: transparent;
+    float: left;
+}
+.show_img{
+    transition: all .5s ease-in-out;
+}
+.show_img:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
+    cursor: pointer;
+}
+#footer{
+    float: left;
+    width: 100.15%;
+    height: 400px;
+    background: darkgreen;
+    border-top: 15px solid #00CD66;
+}
+.copyright{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    border-bottom: 1px solid white;
+    font-size: 13px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+}
+.list_div{
+    width: 25%;
+    height: 200px;
+    border: transparent;
+    float: left;
+}
+.list_div ul{
+    list-style: none;
+}
+.list_div ul a{
+    text-decoration: none;
+    color: white;
+}
+.list_div ul a li{
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    border-bottom: 1px groove grey;
+    font-family: 'Raleway', sans-serif;
+}
+.list_div ul a li:hover{
+    color: orange;
+}
+
+#add3{
+    /* width: 73%;
+    border: 1px solid black;
+    height: 70px;
+    line-height: 70px; */
+    float: left;
+    margin: 10px 10px 10px 130px;
+    text-align: center;
+}

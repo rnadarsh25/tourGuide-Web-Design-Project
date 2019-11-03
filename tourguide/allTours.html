@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="allTours.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+          crossorigin="anonymous">
+
+          <link href="https://fonts.googleapis.com/css?family=Arapey|Exo|Great+Vibes|Orbitron|Play|Playfair+Display+SC|Prata|Satisfy|Tangerine&display=swap" 
+          rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css?family=Be+Vietnam|Raleway|Turret+Road&display=swap"
+           rel="stylesheet">
+    </head>
+    <body onload="showEast(),startSlide()">
+        <header id="header">
+            <div id="heading">
+                <img src="img/logo.png" width="50px" height="50px"/>
+                <h1 style="margin: 0px; display: inline;">tourGuide</h1>
+                <span id="para1" style="display: block;">travel to incredible India!</span>
+            </div>
+            
+            <div id="search_box">
+                <input type="text" id="search" placeholder="search..."/>
+            </div>
+            
+            <div id="login_div">
+                <a href="login.html"><input type="button" id="login" value="login/signup"/></a>
+            </div>
+        </header>
+
+        <main>
+            <div id="nav_div">
+                <ul>
+                    <a href="home2.html"><li>Home</li></a>
+                    <li id="east"  onclick="showEast()">East India</li>
+                    <li id="west" onclick="showWest()">West India</li>
+                    <li id="north" onclick="showNorth()">North India</li>
+                    <li id="south" onclick="showSouth()" style="padding-left:1px;">South India</li>
+                </ul>
+            </div>
+            <br>
+
+            <div id="list1">
+                <div id="detail">
+                    <div id="detail_heading" style="text-align: center;">
+                        <h2 style="margin-bottom: 50px;color: #df293a; font-size: 40px;font-family: 'Turret Road', cursive;">East India Tour Packages</h2>
+                    </div>
+            
+                    <div id="total_found" style="float: left;width: 50%; text-align: center; margin-left: -70px;">
+                        <h3 style="margin: 0px;font-family: 'Raleway', sans-serif;">74 tourists places found in East India.</h3>
+                    </div>
+                    <div id="sort_by" style="float: right;width: 50%; text-align: center;margin-right: -127px;">
+                        Sort By: 
+                            <select>
+                                <option value="revelence">revelence</option>
+                                <option value="pltoh">price(low to high)</option>
+                                <option value="phtol">price(high to low)</option>
+                                <option value="dltoh">duartion(low to high)</option>
+                                <option value="dhtol">duration(high to low)</option>
+                            </select>
+                    </div>
+                </div>
+            
+                <div id="singleitem" style="border-radius: 10px;">
+                    <img src="img/teaplant.jpg" width="35%" height="250px;" style="float: left; border-radius: 10px 0px 0px 10px;"/>
+                        <div id="info" style="float: left;height: 125px; margin-left: 10px;border: transparent; width:35%;">
+                            <h3 style="margin: 10px 0px 10px 0px; font-size: 20px;font-family: 'Raleway', sans-serif;">Fascinating Dargeeling</h3>
+                            <h4 style="margin: 0px 0px 10px 0px; color: #df293a;font-family: 'Raleway', sans-serif; font-size: 18px;">3 Nights</h4>
+                            <h4 style="margin: 0px; font-size: 15px; font-family: 'Raleway', sans-serif;"><strong>Dargeeling(3N)</strong></h4>
+                        </div>
+                        <div id="package_price" style="float: right; text-align: center;width: 28%; height: 247px; border:transparent;" >
+                            <h3 style="margin-bottom:0px; font-size: 18px;
+                             font-family: 'Raleway', sans-serif;color:grey;">Starting from</h3> <br>
+                            <h2 style="margin-bottom: 20px;margin-top: -10px; color: #df293a;font-family: 'Raleway', sans-serif;"><strong>Rs.6000</strong></h2>
+                            <a href="login.html"><input type="button" value="Get Quotes" id="quote_btn"/></a>
+                            <a href="detail.html"><input type="button" value="Continue" id="continue_btn"/></a>
+                        </div>
+                                
+                        <div id="tour_gift" style="height: 110px; color: grey;">
+                            <div style="text-align: center; float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Meal</span></div>
+                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Cabs</span></div>
+                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Bus</span></div>
+                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>BreakFast</span></div>
+                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Party</span></div>
+                            </div>
+                            
+                        </div>
+                        <div id="singleitem" style="border-radius: 10px;">
+                            <img src="tourists/gangtok.jpg" width="35%" height="250px;" style="float: left;border-radius: 10px 0px 0px 10px;"/>
+                                <div id="info" style="float: left;height: 125px; margin-left: 10px;border: transparent; width:35%;">
+                                    <h3 style="margin: 10px 0px 10px 0px; font-size: 20px;font-family: 'Raleway', sans-serif;">Gangtok, Sikkim</h3>
+                                    <h4 style="margin: 0px 0px 10px 0px; color: #df293a;font-family: 'Raleway', sans-serif; font-size: 18px;">3 Nights</h4>
+                                    <h4 style="margin: 0px; font-size: 15px; font-family: 'Raleway', sans-serif;"><strong>Gangtok(3N)</strong></h4>
+                                </div>
+                                <div id="package_price" style="float: right; text-align: center;width: 28%; height: 247px; border:transparent;" >
+                                    <h3 style="margin-bottom:0px; font-size: 18px;
+                                     font-family: 'Raleway', sans-serif;color:grey;">Starting from</h3> <br>
+                                    <h2 style="margin-bottom: 20px;margin-top: -10px; color: #df293a;font-family: 'Raleway', sans-serif;"><strong>Rs.6000</strong></h2>
+                                    <a href="login.html"><input type="button" value="Get Quotes" id="quote_btn"/></a>
+                                    <a href="detail.html"><input type="button" value="Continue" id="continue_btn"/></a>
+                                </div>
+                                        
+                                <div id="tour_gift" style="height: 110px; color: grey;">
+                                    <div style="text-align: center; float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                    <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Meal</span></div>
+                                    <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Cabs</span></div>
+                                    <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Bus</span></div>
+                                    <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Party</span></div>
+                                    <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>BreakFast</span></div>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div id="singleitem"style="border-radius: 10px;">
+                                    <img src="tourists/majuli.jpg" width="35%" height="250px;" style="float: left;border-radius: 10px 0px 0px 10px;"/>
+                                        <div id="info" style="float: left;height: 125px; margin-left: 10px;border: transparent; width:35%;">
+                                            <h3 style="margin: 10px 0px 10px 0px; font-size: 20px;font-family: 'Raleway', sans-serif;">Majuli, Assam</h3>
+                                            <h4 style="margin: 0px 0px 10px 0px; color: #df293a;font-family: 'Raleway', sans-serif; font-size: 18px;">3 Nights</h4>
+                                            <h4 style="margin: 0px; font-size: 15px; font-family: 'Raleway', sans-serif;"><strong>Majuli(3N)</strong></h4>
+                                        </div>
+                                        <div id="package_price" style="float: right; text-align: center;width: 28%; height: 247px; border:transparent;" >
+                                            <h3 style="margin-bottom:0px; font-size: 18px;
+                                             font-family: 'Raleway', sans-serif;color:grey;">Starting from</h3> <br>
+                                            <h2 style="margin-bottom: 20px;margin-top: -10px; color: #df293a;font-family: 'Raleway', sans-serif;"><strong>Rs.6000</strong></h2>
+                                            <a href="login.html"><input type="button" value="Get Quotes" id="quote_btn"/></a>
+                                            <a href="detail.html"><input type="button" value="Continue" id="continue_btn"/></a>
+                                        </div>
+                                                
+                                        <div id="tour_gift" style="height: 110px; color: grey;">
+                                            <div style="text-align: center; float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Meal</span></div>
+                                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Cabs</span></div>
+                                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Bus</span></div>
+                                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Party</span></div>
+                                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>BreakFast</span></div>
+                                            </div>
+                                            
+                                        </div>            
+                        <div style="text-align: right;"><a style="text-decoration: none; color:#df293a;" href="#east.html" onclick="alert('under Maintainence!!')" >See all >></a></div>
+            </div>
+            <div id="list2">
+                <div id="detail">
+                    <div id="detail_heading" style="text-align: center;">
+                        <h2 style="margin-bottom: 50px;color: #df293a; font-size: 40px;font-family: 'Turret Road', cursive;">West India Tour Packages</h2>
+                    </div>
+            
+                    <div id="total_found" style="float: left;width: 50%; text-align: center;margin-left: -70px;">
+                        <h3 style="margin: 0px;font-family: 'Raleway', sans-serif;">65 tourists places found in West India.</h3>
+                    </div>
+                    <div id="sort_by" style="float: right;width: 50%; text-align: center;margin-right: -127px;">
+                        Sort By: 
+                            <select>
+                                <option value="revelence">revelence</option>
+                                <option value="pltoh">price(low to high)</option>
+                                <option value="phtol">price(high to low)</option>
+                                <option value="dltoh">duartion(low to high)</option>
+                                <option value="dhtol">duration(high to low)</option>
+                            </select>
+                    </div>
+                </div>
+            
+                <div id="singleitem">
+                    <img src="tourists/545298.jpg" width="35%" height="250px;" style="float: left;"/>
+                        <div id="info" style="float: left;height: 125px; margin-left: 10px;border: transparent; width:35%;">
+                            <h3 style="margin: 10px 0px 10px 0px; font-size: 20px;font-family: 'Raleway', sans-serif;">Udaipur, Rajasthan</h3>
+                            <h4 style="margin: 0px 0px 10px 0px; color: #df293a;font-family: 'Raleway', sans-serif; font-size: 18px;">3 Nights</h4>
+                            <h4 style="margin: 0px; font-size: 15px;font-family: 'Raleway', sans-serif;"><strong>Udaipur(3N)</strong></h4>
+                        </div>
+                        <div id="package_price" style="float: right; text-align: center;width: 28%; height: 247px; border:transparent;" >
+                            <h3 style="margin-bottom:0px; font-size: 18px;
+                             font-family: 'Raleway', sans-serif;color:grey;">Starting from</h3> <br>
+                            <h2 style="margin-bottom: 20px;margin-top: -10px; color: #df293a;font-family: 'Raleway', sans-serif;"><strong>Rs.6000</strong></h2>
+                            <a href="login.html"><input type="button" value="Get Quotes" id="quote_btn"/></a>
+                            <a href="detail.html"><input type="button" value="Continue" id="continue_btn"/></a>
+                        </div>
+                                
+                        <div id="tour_gift" style="height: 110px; color: grey;">
+                            <div style="text-align: center; float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                            </div>
+                            
+                        </div>
+                        <div id="singleitem">
+                            <img src="tourists/05_majestic_full_673655992741448058771.jpg" width="35%" height="250px;" style="float: left;"/>
+                                <div id="info" style="float: left;height: 125px; margin-left: 10px;border: transparent; width:35%;">
+                                    <h3 style="margin: 10px 0px 10px 0px; font-size: 20px;font-family: 'Raleway', sans-serif;">Kutch, Gujarat</h3>
+                                    <h4 style="margin: 0px 0px 10px 0px; color: #df293a;font-family: 'Raleway', sans-serif;font-size: 18px;">3 Nights</h4>
+                                    <h4 style="margin: 0px; font-size: 15px; font-family: 'Raleway', sans-serif;"><strong>Kutch(3N)</strong></h4>
+                                </div>
+                                <div id="package_price" style="float: right; text-align: center;width: 28%; height: 247px; border:transparent;" >
+                                    <h3 style="margin-bottom:0px; font-size: 18px;
+                                     font-family: 'Raleway', sans-serif;color:grey;">Starting from</h3> <br>
+                                    <h2 style="margin-bottom: 20px;margin-top: -10px; color: #df293a;font-family: 'Raleway', sans-serif;"><strong>Rs.6000</strong></h2>
+                                    <a href="login.html"><input type="button" value="Get Quotes" id="quote_btn"/></a>
+                                    <a href="detail.html"><input type="button" value="Continue" id="continue_btn"/></a>
+                                </div>
+                                        
+                                <div id="tour_gift" style="height: 110px; color: grey;">
+                                    <div style="text-align: center; float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                    <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Meal</span></div>
+                                    <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Cab</span></div>
+                                    <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Travel</span></div>
+                                    <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Clothes</span></div>
+                                    <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div id="singleitem">
+                                    <img src="tourists/Kailasa-Temple-at-Ellora-Caves-Aurangabad.jpg" width="35%" height="250px;" style="float: left;"/>
+                                        <div id="info" style="float: left;height: 125px; margin-left: 10px;border: transparent; width:35%;">
+                                            <h3 style="margin: 10px 0px 10px 0px; font-size: 20px;font-family: 'Raleway', sans-serif;">Ajanta Allora Caves, Maharastra</h3>
+                                            <h4 style="margin: 0px 0px 10px 0px; color: #df293a;font-family: 'Raleway', sans-serif; font-size: 18px;">3 Nights</h4>
+                                            <h4 style="margin: 0px; font-size: 15px; font-family: 'Raleway', sans-serif;"><strong>Allora Caves(3N)</strong></h4>
+                                        </div>
+                                        <div id="package_price" style="float: right; text-align: center;width: 28%; height: 247px; border:transparent;" >
+                                            <h3 style="margin-bottom:0px; font-size: 18px;
+                                             font-family: 'Raleway', sans-serif;color:grey;">Starting from</h3> <br>
+                                            <h2 style="margin-bottom: 20px;margin-top: -10px; color: #df293a;font-family: 'Raleway', sans-serif;"><strong>Rs.6000</strong></h2>
+                                            <a href="login.html"><input type="button" value="Get Quotes" id="quote_btn"/></a>
+                                            <a href="detail.html"><input type="button" value="Continue" id="continue_btn"/></a>
+                                        </div>
+                                                
+                                        <div id="tour_gift" style="height: 110px; color: grey;">
+                                            <div style="text-align: center; float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                            </div>
+                                            
+                                        </div>            
+                        <div style="text-align: right;"><a style="text-decoration: none; color:#df293a;" href="east.html" onclick="alert('under Maintainence!!')">See all >></a></div>
+            </div>
+
+            <div id="list3">
+                <div id="detail">
+                    <div id="detail_heading" style="text-align: center;">
+                        <h2 style="margin-bottom: 50px;color: #df293a; font-size: 40px;font-family: 'Turret Road', cursive;">North India Tour Packages</h2>
+                    </div>
+            
+                    <div id="total_found" style="float: left;width: 50%; text-align: center;margin-left: -70px;">
+                        <h3 style="margin: 0px;font-family: 'Raleway', sans-serif;">95 tourists places found in North India.</h3>
+                    </div>
+                    <div id="sort_by" style="float: right;width: 50%; text-align: center;margin-right: -127px;">
+                        Sort By: 
+                            <select>
+                                <option value="revelence">revelence</option>
+                                <option value="pltoh">price(low to high)</option>
+                                <option value="phtol">price(high to low)</option>
+                                <option value="dltoh">duartion(low to high)</option>
+                                <option value="dhtol">duration(high to low)</option>
+                            </select>
+                    </div>
+                </div>
+            
+                <div id="singleitem">
+                    <img src="tourists/65-653565_leh-ladakh-pangong-tso.jpg" width="35%" height="250px;" style="float: left;"/>
+                        <div id="info" style="float: left;height: 125px; margin-left: 10px;border: transparent; width:35%;">
+                            <h3 style="margin: 10px 0px 10px 0px; font-size: 20px;font-family: 'Raleway', sans-serif;">Ladhakh, Jammu & Kashmir</h3>
+                            <h4 style="margin: 0px 0px 10px 0px; color: #df293a;font-family: 'Raleway', sans-serif; font-size: 18px;">3 Nights</h4>
+                            <h4 style="margin: 0px; font-size: 15px; font-family: 'Raleway', sans-serif;"><strong>Ladhakh(3N)</strong></h4>
+                        </div>
+                        <div id="package_price" style="float: right; text-align: center;width: 28%; height: 247px; border:transparent;" >
+                            <h3 style="margin-bottom:0px; font-size: 15px;
+                             font-family: 'Raleway', sans-serif;color:grey;">Starting from</h3> <br>
+                            <h2 style="margin-bottom: 20px;margin-top: -10px; color: #df293a;font-family: 'Raleway', sans-serif;"><strong>Rs.6000</strong></h2>
+                            <a href="login.html"><input type="button" value="Get Quotes" id="quote_btn"/></a>
+                            <a href="detail.html"><input type="button" value="Continue" id="continue_btn"/></a>
+                        </div>
+                                
+                        <div id="tour_gift" style="height: 110px; color: grey;">
+                            <div style="text-align: center; float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                            </div>
+                            
+                        </div>
+                        <div id="singleitem">
+                            <img src="tourists/rishikesh.jpg" width="35%" height="250px;" style="float: left;"/>
+                                <div id="info" style="float: left;height: 125px; margin-left: 10px;border: transparent; width:35%;">
+                                    <h3 style="margin: 10px 0px 10px 0px; font-size: 20px;font-family: 'Raleway', sans-serif;">Rishikesh, Uttrakhand</h3>
+                                    <h4 style="margin: 0px 0px 10px 0px; color: #df293a;font-family: 'Raleway', sans-serif; font-size: 18px;">3 Nights</h4>
+                                    <h4 style="margin: 0px; font-size: 15px; font-family: 'Raleway', sans-serif;"><strong>Rishikesh(3N)</strong></h4>
+                                </div>
+                                <div id="package_price" style="float: right; text-align: center;width: 28%; height: 247px; border:transparent;" >
+                                    <h3 style="margin-bottom:0px; font-size: 18px;
+                                     font-family: 'Raleway', sans-serif;color:grey;">Starting from</h3> <br>
+                                    <h2 style="margin-bottom: 20px;margin-top: -10px; color: #df293a;font-family: 'Raleway', sans-serif;"><strong>Rs.6000</strong></h2>
+                                    <a href="login.html"><input type="button" value="Get Quotes" id="quote_btn"/></a>
+                                    <a href="detail.html"><input type="button" value="Continue" id="continue_btn"/></a>
+                                </div>
+                                        
+                                <div id="tour_gift" style="height: 110px; color: grey;">
+                                    <div style="text-align: center; float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                    <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                    <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                    <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                    <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                    <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div id="singleitem">
+                                    <img src="tourists/manali.jpg" width="35%" height="250px;" style="float: left;"/>
+                                        <div id="info" style="float: left;height: 125px; margin-left: 10px;border: transparent; width:35%;">
+                                            <h3 style="margin: 10px 0px 10px 0px; font-size: 20px;font-family: 'Raleway', sans-serif;">Manali, Himanchal Pradesh</h3>
+                                            <h4 style="margin: 0px 0px 10px 0px; color: #df293a;font-family: 'Raleway', sans-serif; font-size: 18px;">3 Nights</h4>
+                                            <h4 style="margin: 0px; font-size: 15px; font-family: 'Raleway', sans-serif;"><strong>Manali(3N)</strong></h4>
+                                        </div>
+                                        <div id="package_price" style="float: right; text-align: center;width: 28%; height: 247px; border:transparent;" >
+                                            <h3 style="margin-bottom:0px; font-size: 15px;
+                                             font-family: 'Raleway', sans-serif;color:grey;">Starting from</h3> <br>
+                                            <h2 style="margin-bottom: 20px;margin-top: -10px; color: #df293a;font-family: 'Raleway', sans-serif;"><strong>Rs.6000</strong></h2>
+                                            <a href="login.html"><input type="button" value="Get Quotes" id="quote_btn"/></a>
+                                            <a href="detail.html"><input type="button" value="Continue" id="continue_btn"/></a>
+                                        </div>
+                                                
+                                        <div id="tour_gift" style="height: 110px; color: grey;">
+                                            <div style="text-align: center; float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                            </div>
+                                            
+                                        </div>            
+                        <div style="text-align: right;"><a style="text-decoration: none; color:#df293a;" href="east.html" onclick="alert('under Maintainence!!')">See all >></a></div>
+            </div>
+
+
+            <div id="list4">
+                <div id="detail">
+                    <div id="detail_heading" style="text-align: center;">
+                        <h2 style="margin-bottom: 50px;color: #df293a; font-size: 40px;font-family: 'Turret Road', cursive;">South India Tour Packages</h2>
+                    </div>
+            
+                    <div id="total_found" style="float: left;width: 50%; text-align: center;margin-left: -70px;">
+                        <h3 style="margin: 0px;font-family: 'Raleway', sans-serif;">67 tourists places found in South India.</h3>
+                    </div>
+                    <div id="sort_by" style="float: right;width: 50%; text-align: center;margin-right: -127px;">
+                        Sort By: 
+                            <select>
+                                <option value="revelence">revelence</option>
+                                <option value="pltoh">price(low to high)</option>
+                                <option value="phtol">price(high to low)</option>
+                                <option value="dltoh">duartion(low to high)</option>
+                                <option value="dhtol">duration(high to low)</option>
+                            </select>
+                    </div>
+                </div>
+            
+                <div id="singleitem">
+                    <img src="tourists/ooty.jpg" width="35%" height="250px;" style="float: left;"/>
+                        <div id="info" style="float: left;height: 125px; margin-left: 10px;border: transparent; width:35%;">
+                            <h3 style="margin: 10px 0px 10px 0px; font-size: 20px;font-family: 'Raleway', sans-serif;">Ooty, Tamil Nadu</h3>
+                            <h4 style="margin: 0px 0px 10px 0px; color: #df293a;font-family: 'Raleway', sans-serif; font-size: 18px;">3 Nights</h4>
+                            <h4 style="margin: 0px; font-size: 15px; font-family: 'Raleway', sans-serif;"><strong>Ooty(3N)</strong></h4>
+                        </div>
+                        <div id="package_price" style="float: right; text-align: center;width: 28%; height: 247px; border:transparent;" >
+                            <h3 style="margin-bottom:0px; font-size: 15px;
+                             font-family: 'Raleway', sans-serif;color:grey;">Starting from</h3> <br>
+                            <h2 style="margin-bottom: 20px;margin-top: -10px; color: #df293a;font-family: 'Raleway', sans-serif;"><strong>Rs.6000</strong></h2>
+                            <a href="login.html"><input type="button" value="Get Quotes" id="quote_btn"/></a>
+                            <a href="detail.html"><input type="button" value="Continue" id="continue_btn"/></a>
+                        </div>
+                                
+                        <div id="tour_gift" style="height: 110px; color: grey;">
+                            <div style="text-align: center; float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                            </div>
+                            
+                        </div>
+                        <div id="singleitem">
+                            <img src="tourists/DSC03091-Medium.jpg" width="35%" height="250px;" style="float: left;"/>
+                                <div id="info" style="float: left;height: 125px; margin-left: 10px;border: transparent; width:35%;">
+                                    <h3 style="margin: 10px 0px 10px 0px; font-size: 20px;font-family: 'Raleway', sans-serif;">Alleppey, Kerala</h3>
+                                    <h4 style="margin: 0px 0px 10px 0px; color: #df293a;font-family: 'Raleway', sans-serif; font-size: 18px;">3 Nights</h4>
+                                    <h4 style="margin: 0px; font-size: 15px; font-family: 'Raleway', sans-serif;"><strong>Alleppey(3N)</strong></h4>
+                                </div>
+                                <div id="package_price" style="float: right; text-align: center;width: 28%; height: 247px; border:transparent;" >
+                                    <h3 style="margin-bottom:0px; font-size: 15px;
+                                     font-family: 'Raleway', sans-serif;color:grey;">Starting from</h3> <br>
+                                    <h2 style="margin-bottom: 20px;margin-top: -10px; color: #df293a;font-family: 'Raleway', sans-serif;"><strong>Rs.6000</strong></h2>
+                                    <a href="login.html"><input type="button" value="Get Quotes" id="quote_btn"/></a>
+                                    <a href="detail.html"><input type="button" value="Continue" id="continue_btn"/></a>
+                                </div>
+                                        
+                                <div id="tour_gift" style="height: 110px; color: grey;">
+                                    <div style="text-align: center; float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                    <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                    <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                    <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                    <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                    <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div id="singleitem">
+                                    <img src="tourists/tirupati.jpg" width="35%" height="250px;" style="float: left;"/>
+                                        <div id="info" style="float: left;height: 125px; margin-left: 10px;border: transparent; width:35%;">
+                                            <h3 style="margin: 10px 0px 10px 0px; font-size: 20px;font-family: 'Raleway', sans-serif;">Tirupati, Andhra Pradesh</h3>
+                                            <h4 style="margin: 0px 0px 10px 0px; color: #df293a;font-family: 'Raleway', sans-serif; font-size: 18px;">3 Nights</h4>
+                                            <h4 style="margin: 0px; font-size: 15px;font-family: 'Raleway', sans-serif;"><strong>Tirupati(3N)</strong></h4>
+                                        </div>
+                                        <div id="package_price" style="float: right; text-align: center;width: 28%; height: 247px; border:transparent;" >
+                                            <h3 style="margin-bottom:0px; font-size: 15px;
+                                             font-family: 'Raleway', sans-serif;color:grey;">Starting from</h3> <br>
+                                            <h2 style="margin-bottom: 20px;margin-top: -10px; color: #df293a;font-family: 'Raleway', sans-serif;"><strong>Rs.6000</strong></h2>
+                                            <a href="login.html"><input type="button" value="Get Quotes" id="quote_btn"/></a>
+                                            <a href="detail.html"><input type="button" value="Continue" id="continue_btn"/></a>
+                                        </div>
+                                                
+                                        <div id="tour_gift" style="height: 110px; color: grey;">
+                                            <div style="text-align: center; float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                            <div style="text-align: center;float: left;" class="icon"><i class="fa fa-bed fa-md"></i><br><span>Hotel</span></div>
+                                            </div>
+                                            
+                                        </div>            
+                        <div style="text-align: right;"><a style="text-decoration: none; color:#df293a;" href="east.html" onclick="alert('under Maintainence!!')">See all >></a></div>
+            </div>            
+
+            <div id="help_section">
+                <h3 style="font-family: 'Raleway', sans-serif; font-size:20px;">search in map</h3>
+                <a href="https://www.google.co.in/maps/place/India/@20.009515,64.4220604,4z/data=!3m1!4b1!4m5!3m4!1s0x30635ff06b92b791:0xd78c4fa1854213a6!8m2!3d20.593684!4d78.96288"> 
+                <img src="img/IndiaMap.jpg" width="319px" height="320px" alt="east_map"></a>
+                <br><br><br><br><br><br>
+                <div id="advertisement">
+                    <img src="1.jpg" id="image1" width="250px" height="600px" alt="lpu"/>
+                </div>
+
+                <br><br><br><br>
+                <div id="updates" style="background: #df293a; color: white; text-align: center;border: 1px solid black;">
+                    <div id="exp" style="margin:40px 10px 40px 10px;">
+                    <span style="font-size: 18px; font-family: 'Raleway', sans-serif;">
+                        Get our latest offers directly to your inbox.</span>
+                    <input type="email" placeholder="Email" id="email_input"
+                     style="width: 300px; height: 30px; line-height: 30px; font-size: 20px;
+                     font-family: 'Raleway', sans-serif; border: transparent; border-radius: 5px; outline: none;"/>
+                     <br><br><button type="button"
+                      style="background: #00cd66;color:white; font-size: 17px;font-family: 'Raleway', sans-serif;border: transparent;">Subscribe now</button>
+                     </div>
+                </div>
+            </div>
+        </main>
+        <div id="footer">
+                <div class="copyright">
+                    <h1><img src="img/logo.png" width="100px" height="100px"/>
+                        COPYRIGHT  &COPY; tourGuide 2019</h1>
+                        <h2><span style="color: orange; letter-spacing: 1px;">info@tourguide.com</span> - Jalandhar, Punjab, 144411.</h2>
+                </div>
+                <div class="list_div">
+                    <ul>
+                        <a href="#"><li>Home</li></a>
+                        <a href="#"><li>Trips</li></a>
+                        <a href="#"><li>Planning</li></a>
+                        <a href="#"><li>About</li></a>
+                    </ul>
+                </div>
+                <div class="list_div">
+                    <ul>
+                        <a href="#"><li>FAQ</li></a>
+                        <a href="#"><li>Guides</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Contact</li></a>
+                    </ul>
+                </div>
+                <div class="list_div">
+                    <i style="background:#343433;padding: 10px 15px 10px 15px; color: white;margin-top: 20px;"
+                     class="fab fa-facebook-f"></i>
+                    <i style="background:#343433;padding: 10px 15px 10px 15px; color: white;margin-top: 20px;"
+                     class="far fa-envelope"></i>
+                    <br><br>
+                    <strong style="color: white; font-size: 16px; font-family: 'Raleway', sans-serif;letter-spacing: 1px;">
+                        Design by <span style="color: orange; font-size: 16px; font-family: 'Raleway', sans-serif;letter-spacing: 1px;">Adarsh Singh Tiwari.</span></strong> <br><br>
+                        <strong style="color: white; font-size: 16px; font-family: 'Raleway', sans-serif;letter-spacing: 1px;">
+                            Marketing by <span style="color: orange; font-size: 16px; font-family: 'Raleway', sans-serif;letter-spacing: 1px;">yourGuides.</span></strong>
+                    
+                </div>     
+            </div>
+
+        </footer>
+
+
+        <script>
+
+            var intervalId, currentImageNumber;
+            function startSlide(){
+                intervalId = setInterval(setImages, 2000); //1.jpg
+            }
+            function setImages(){
+                var imageSrc = document.getElementById("image1").getAttribute('src');
+                currentImageNumber = imageSrc.substring(imageSrc.lastIndexOf("/")+1, imageSrc.lastIndexOf("/")+2);
+                if(currentImageNumber==3){
+                    currentImageNumber = 0;
+                }
+                document.getElementById("image1").setAttribute('src', ""+(Number(currentImageNumber)+1)+".jpg");
+            } 
+
+
+            function showEast(){
+                document.getElementById('east').style.backgroundColor = "#df293a";
+                document.getElementById('west').style.backgroundColor = "";
+                document.getElementById('north').style.backgroundColor = "";
+                document.getElementById('south').style.backgroundColor = "";
+                document.getElementById('list1').style.display = "block";
+                document.getElementById('list2').style.display = "none";
+                document.getElementById('list3').style.display = "none";
+                document.getElementById('list4').style.display = "none";
+            }
+            function showWest(){
+                document.getElementById('east').style.background = "";
+                document.getElementById('west').style.backgroundColor = "#df293a";
+                document.getElementById('north').style.backgroundColor = "";
+                document.getElementById('south').style.backgroundColor = "";
+                document.getElementById('list1').style.display = "none";
+                document.getElementById('list2').style.display = "block";
+                document.getElementById('list3').style.display = "none";
+                document.getElementById('list4').style.display = "none";
+
+            }
+            function showNorth(){
+                document.getElementById('east').style.backgroundColor = "";
+                document.getElementById('west').style.backgroundColor = "";
+                document.getElementById('north').style.backgroundColor = "#df293a";
+                document.getElementById('south').style.backgroundColor = "";
+                document.getElementById('list1').style.display = "none";
+                document.getElementById('list2').style.display = "none";
+                document.getElementById('list3').style.display = "block";
+                document.getElementById('list4').style.display = "none";
+            }
+            function showSouth(){
+                document.getElementById('east').style.backgroundColor = "";
+                document.getElementById('west').style.backgroundColor = "";
+                document.getElementById('north').style.backgroundColor = "";
+                document.getElementById('south').style.backgroundColor = "#df293a";
+                document.getElementById('list1').style.display = "none";
+                document.getElementById('list2').style.display = "none";
+                document.getElementById('list3').style.display = "none";
+                document.getElementById('list4').style.display = "block";
+                
+            }
+        </script>
+    </body>
+</html>

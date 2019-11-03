@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="login.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Arapey|Exo|Great+Vibes|Orbitron|Play|Playfair+Display+SC|Prata|Satisfy|Tangerine&display=swap" 
+         rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Be+Vietnam|Raleway|Turret+Road&display=swap"
+          rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <h1>tourGuide <span style = "font-size: 20px; color: white;">
+                    travel with us to 300+ cities , 3000+ travel agents , anywhere.</span></h1>
+            </div>
+        </header>
+        <main>
+            <div id="login_info" style="float: left; width: 50%;">
+                <div id="info" style="width: 300px; text-align:center;position: relative; left: 25%;top: 2%;">
+                        <h1 style="font-size: 40px;">There's a smarter way to travel!<br><span style="font-size: 70px;
+                         color: #00cd66;">Join tourGuide today!</span></h1>
+                </div>
+            </div>
+            <div id="login_two">
+                <div id="signup_offer">
+                    <h3 style="margin: 0px;">sign up and get exclusive offers</h3>
+                </div>
+                <div id="login_detail">
+                    <h1>Login / Signup</h1>
+                    <span>Please enter your phone number to continue.</span><br><br>
+                    <input type="text" value="+91" id="code"/>
+                    <input type="text" id="mobile"/><br><br>
+                    <input type="button" onclick="check()" value="verify number" id="verify_btn"/><br><br>
+                    <span>Prefer to sign in with password?<a style="text-decoration: none;color:#df293a;font-weight: bold;" href="#"> click here!</a></span>
+                </div>
+                <div>
+                    <fieldset id="sign_opt">
+                        <legend id="legend">Or sign in as</legend>
+                        <input type="button" value="Travel Agent >" id="travel_agent"/>
+                        <input type="button" value="Corporate >" id="corp"/>
+                    </fieldset>
+                </div>
+
+            </div>
+        </main>
+        <footer></footer>
+
+        <script>
+            function check(){
+                var a = document.getElementById("mobile").value;
+                if(a.length<10 || a.length>10){
+                    alert("Mobile Number is not valid!!");
+                }else{
+                    var res = confirm("Mobile no. verified.\nPress ok to continue...");
+                    if(res==true){
+                        window.open('home2.html');
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,253 @@
+body{
+    background: whitesmoke;
+    margin: 0px;
+    padding: 10px;
+}
+#header{
+    background: #00CD66;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+#nav{
+    text-align: right;
+}
+#search{
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px thin white;
+    padding: 5px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px; 
+    outline: none;
+    position: absolute;
+    left: 30%;
+    top: 2%;
+}
+#login{
+    background: #00ff66;
+    border: transparent;
+    border-radius: 2px;
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 3%;
+    right: 7%;
+}
+
+#east{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*=============================================eastnav=====================================*/
+#eastnav{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border: 1px solid green;
+}
+#enav{
+    background: red;
+    margin: 0px;
+    padding: 0px;
+}
+#enav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#enav ul li{
+    float: left;
+    text-align: center;
+    width: 156.5px;
+    height: 40px;
+    line-height: 40px;
+    border-right: 1px solid #00CD66;
+    margin: 0px;
+    color: black;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+#enav ul li ul li{
+    display: none;
+}
+#enav ul li:hover{
+    background: #00CD66;
+    color: white;
+}
+#enav ul li:hover ul li{
+    width: 200px;
+    display: block;
+    text-align: left;
+    border-top: 1px solid darkgreen;
+    border-left: 1px solid darkgreen;
+    background: #00CD66;
+    cursor: pointer;
+    color: white;
+}
+#last{
+    border: 0px solid #00CD66;
+    padding-left: 1px;
+}
+/*============================================showplaces div==============================*/
+#showplaces{
+    width: 300px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    left: 157px;
+    top: 40px;
+    display: none;
+}
+#showplaces ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#showplaces ul li{
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: sans-serif;
+    border-top: 1px solid darkgreen; 
+    background: #00CD66;
+}
+#showplaces ul li:hover{
+    background: #00CD66;
+    color: white;
+    border-color: darkgreen;
+    cursor: pointer;
+}
+/*=========================================leftbar================================*/
+#leftbar{
+    width: 20%;
+    margin-top: 10px;
+    border: 1px solid green;
+    float: left;
+}
+/*==========================================list==================================*/
+#list{
+    float: right;
+    width: 78.5%;
+    margin: 10px 0px 0px 10px;
+    border: 1px solid green;
+}
+/*=========================================detail============================*/
+#detail{
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    border: 1px solid green;
+    margin-top: 10px;
+}
+/*=======================================singleitem================================*/
+#singleitem{
+    margin-top: 30px;
+    width: 100%;
+    height: 250px;
+    border: 1px solid green;
+}
+#tour_gift{
+    float: left;
+    border: 1px solid black;
+    width: 35%;
+    margin: 10px 0px 0px 10px;
+    font-size: 12px; 
+}
+#quote_btn{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 7px;
+    background: #00CD66;
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+    outline: none;
+}
+#quote_btn:hover{
+    background: darkgreen;
+    color: white;
+    cursor: pointer;
+}
+.icon{
+    width: 40px;
+    height: 20px;
+    border: transparent;
+    margin: 5px;
+    padding: 7px;
+}
+/*=============================================slide=======================*/
+#slide{
+    margin: 0px;
+    padding: 0px;
+    width: 1260px;
+    overflow: hidden;
+}
+#showslide{
+    position: relative;
+    width: 4928px;
+    animation-name: eastslide;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+.slideimg{
+    width: 700px;
+    height: 300px;
+    border-radius: 5px;
+    margin:2px;
+    float: left;
+    display: block;
+}
+@keyframes eastslide{
+    0%{
+        left: -420px;
+    }
+    14%{
+        left: -420px;
+    }
+    17%{
+        left: -1120px;
+    }
+    31%{
+        left: -1120px;
+    }
+    34%{
+        left: -1820px;
+    }
+    48%{
+        left: -1820px;
+    }
+    51%{
+        left: -2520px;
+    }
+    65%{
+        left: -2520px;
+    }
+    69%{
+        left: -3220px;
+    }
+    83%{
+        left: -3220px;
+    }
+    86%{
+        left: -3220px;
+    }
+    97%{
+        left: -3220px;
+    }
+    100%{
+        left: 3920px;
+    }
+
+}

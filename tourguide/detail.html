@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="detail.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Arapey|Exo|Great+Vibes|Orbitron|Play|Playfair+Display+SC|Prata|Satisfy|Tangerine&display=swap" 
+          rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css?family=Be+Vietnam|Raleway|Turret+Road&display=swap"
+           rel="stylesheet">
+
+           <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    </head>
+    <body onload="startSlide()">
+        <div id="header">
+                <div id="heading">
+                        <img src="img/logo.png" width="50px" height="50px"/>
+                        <h1 style="margin: 0px; display: inline;">tourGuide</h1>
+                        <span id="para1" style="display: block;">travel to incredible India!</span>
+                    </div>
+                    
+                    <div id="search_box">
+                        <input type="text" id="search" placeholder="search..."/>
+                    </div>
+                    
+                    <div id="login_div">
+                        <a href="login.html"><input type="button" id="login" value="login/signup"/></a>
+                    </div>
+        </div>
+        <main>
+            <div id="details_nav">
+                <ul>
+                    <a href="home2.html"><li>Home</li></a>
+                    <a href="detail.html"><li class="active">Dargeeling</li></a>
+                        <!-- <ul>
+                            <li>Dargeeling Himalayan Railway</li>
+                            <li>Tiger Hills</li>
+                            <li>Batasia Loop</li>
+                            <li>Dargeeling Ropeway</li>
+                            <li>Nightangle Park</li>
+                        </ul> -->
+                    <a href="allTours.html"><li>Tours</li></a>
+                    <a href="hotels.html"><li>Hotels</li></a>
+                    <li>Map</li>
+                    <a href="photos.html"><li>Gallary</li></a>
+                    <a href="food.html"><li>Food</li></a>
+                </ul>
+            </div>
+            <div id="left"></div>
+            <div id="right"></div>
+            <a href="allTours.html"><input type="button" value="Back" id="back_btn"/></a>
+            <a href="book_tickets.html"><input type="button" value="Book Ticket" id="cont_btn"/></a> 
+            <div id="main2">
+                <div id="main_info">
+                    <div id="info_image">
+                    <img src="img/teaplant.jpg"
+                     width="550px" height="400px" id="here"/>
+                     <img onclick="change(this)" src="img/teaplant.jpg" width="75px" height="50px"/>
+                     <img onclick="change(this)" src="img/rockgaden.jpg" width="75px" height="50px"/>
+                     <img onclick="change(this)" src="img/teesta.jpg" width="75px" height="50px"/>
+                     <img onclick="change(this)" src="img/ropeway.jpg" width="75px" height="50px"/>
+                     <img onclick="change(this)" src="img/singalia.jpg" width="75px" height="50px"/>
+                     <img onclick="change(this)" src="img/tinchuley.jpg" width="75px" height="50px"/>
+                     <img onclick="change(this)" src="img/hampi.jpg" width="75px" height="50px"/>
+                    </div>
+
+                     <div id="name_location">
+                        <h3 style="margin: 10px 0px 10px 0px; font-size: 35px;letter-spacing: 1px;
+                         font-family: 'Raleway', sans-serif;">Dargeeling</h3>
+                        <h4 style="margin: 0px 0px 10px 0px; color:skyblue;font-size: 20px;font-family: 'Raleway', sans-serif;">West Bengal, India</h4>
+                        <h5 style="margin: 0px 0px 0px 0px; color: #df293a; font-size: 15px;letter-spacing: 1px;text-decoration: underline;font-family: 'Raleway', sans-serif;">38 Places to visit in Dargeeling</h5>
+                     </div>
+                     <div id="ratings">
+                        <input type="button" style="font-family: 'Raleway', sans-serif;" value="4.3/5" id="rating_btn"/><br>
+                        <a href="#" style="text-decoration: none;font-size:15px;
+                         font-family: 'Raleway', sans-serif;font-weight: bold;
+                          color: #00cd66; margin:5px 15px 10px 10px; ">350 Votes</a>
+                     </div>
+
+                     <div id="offers_hotels">
+                        <h3 style="margin: 20px 0px 10px 10px; font-size: 25px;
+                         font-family: 'Raleway', sans-serif;"><span style="color: darkgreen;">Rs.6000 </span><Span>onwards
+                            <a href="#" style="text-decoration: none; color: skyblue;">view packages</a></Span></h3>
+                        <input type="button" id="get_cus" value="Get Customised Packages"/>
+                        <a href="hotels.html"><input type="button" id="hotels" value="View Hotels"/></a>
+                        
+                     </div>
+
+                     <div id="weather">
+                        <div class="div1">
+                            <h3 style="margin:0px;font-size:20px; font-family: 'Raleway', sans-serif;">
+                                Weather: <span style="color: grey; font-weight:200; font-size: 18px;">18 deg. C</span></h3>
+                        </div>
+                        <div class="div1">
+                            <h3 style="margin:0px;font-size:20px; font-family: 'Raleway', sans-serif;"><strong>Best Time: </strong>
+                                <span style="color: grey; font-weight:200;font-size: 18px;">Feb - March , Sep - Dec</span>
+                                <a href="#" style="text-decoration: none; font-size:18px;color: skyblue;">Read more</a></h3>
+                        </div>
+                        <div class="div1">
+                            <h3 style="margin:0px;font-size:20px; font-family: 'Raleway', sans-serif;">
+                                <strong>Ideal Duration: </strong><span style="color: grey; font-weight:200;font-size: 18px;">2 - 3 Days</span></h3>
+                        </div>
+                        <div class="div1">
+                            <h3 style="margin:0px;font-size:20px; font-family: 'Raleway', sans-serif;">
+                                <strong>Nearest Airport: </strong><span style="color: grey; font-weight:200;font-size: 18px;">Bagdogra</span>
+                                <a href="#" style="text-decoration: none; font-size:18px; color: skyblue;">Check Flights</a></h3>
+                        </div>
+
+                     </div>
+                    </div>
+            </div>
+
+            <a name="continue">
+            <div id="all_places">
+                <div id="railway">
+                    <img src="img/railway.jpg" width="450px" height="250px"/>
+                </div>
+                <div id="tiger_hills">
+                    <img src="img/tigerhills.jpg" width="698px" height="500px"/>
+                </div>
+                <div id="batasia_loop">
+                    <img src="img/batistaloop.jpg" width="450px" height="248px"/>
+                </div>
+                <div id="ropeway">
+                    <img src="img/ropeway.jpg" width="450px" height="350px"/>
+                </div>
+                <div id="add1">
+                    <img src="1.jpg" id="image1" style="margin: 12px 2px 12px 2px;" width="240px" height="680px"/> 
+                </div>    
+                <div id="rock_garden">
+                    <img src="img/rockgaden.jpg" width="450px" height="350px"/>
+                </div>
+                <div id="singalia">
+                    <img src="img/singalia.jpg" width="450px" height="350ox"/>
+                </div>
+                <div id="ropeway">
+                        <img src="img/ropeway.jpg" width="450px" height="350ox"/>
+                    </div>
+                <div id="teesta_raft">
+                    <img src="img/teesta.jpg" width="698px" height="500px"/>
+                </div>
+                <div id="tea_plant">
+                   <img src="img/teaplant.jpg" width="450px" height="250px"/>
+                </div>
+                <div id="monestry">
+                    <img src="img/monestry.jpg" width="450px" height="250px"/>
+                </div>
+                <div id="trekking">
+                    <img src="img/trekking.jpg" width="548px" height="300px"/>
+                </div>
+                <div id="tinchuley">
+                    <img src="img/tinchuley.jpg" width="600px" height="300px"/>
+                </div>
+                <div id="add2">
+                        <img src="1.png" width="100%" height="100px"/>
+                </div>
+                            
+            </div>
+            </a>
+
+            <div id="all_places_two">
+                    <div id="railway">
+                        <h3>Dargeeling Himalayan Railway</h3>
+                        <a href="railway_details.html"><input type="button" value="explore @5000" class="exp_btn"/></a>
+                    </div>
+                    <div id="tiger_hills">
+                        <h3>Tiger Hills</h3>
+                        <input type="button" value="explore @6000" class="exp_btn"/>
+                    </div>
+                    <div id="batasia_loop">
+                        <h3>Batasia Loop</h3>
+                        <input type="button" value="explore @4000" class="exp_btn"/>
+                    </div>
+                    <div id="ropeway">
+                        <h3>Dargeeling Ropeway</h3>
+                        <input type="button" value="explore @5000" class="exp_btn"/>
+                    </div>
+                    <div id="add1">
+     
+                    </div>    
+                    <div id="rock_garden">
+                        <h3>Rock Garden</h3>
+                        <input type="button" value="explore @5000" class="exp_btn"/>
+                    </div>
+                    <div id="singalia">
+                        <h3>Singalia National Park</h3>
+                        <input type="button" value="explore" class="exp_btn"/>
+                    </div>
+                    <div id="ropeway">
+                        <h3>Ropeway</h3>
+                        <input type="button" value="explore" class="exp_btn"/>
+                        </div>
+                    <div id="teesta_raft">
+                        <h3>Teesta River Rafting</h3>
+                        <input type="button" value="explore" class="exp_btn"/>
+                    </div>
+                    <div id="tea_plant">
+                        <h3>Tea Plantation</h3>
+                        <input type="button" value="explore" class="exp_btn"/>
+                    </div>
+                    <div id="monestry">
+                        <h3>Monestries</h3>
+                        <input type="button" value="explore" class="exp_btn"/>
+                    </div>
+                    <div id="trekking">
+                        <h3>Trekking at Hills</h3>
+                        <input type="button" value="explore" class="exp_btn"/>
+                    </div>
+                    <div id="tinchuley">
+                        <h3>Tinchuley Village</h3>
+                        <input type="button" value="explore" class="exp_btn"/>
+                    </div>
+                    <div id="add2">
+                        
+                    </div>      
+                </div>
+                <div id="feedback">
+                        <div id="feed">
+                            <h2 style="margin-top:20px;font-size: 40px;text-decoration:underline;font-family:Georgia, 'Times New Roman', Times, serif;">Our Feedbacks</h2>
+                            <div id="Pone">
+                            <h3 style="margin-top: 70px;">"This site is amazing.I loved the experience and Dargeeling is
+                                 one of the most beautuful places I have seen."</h3></div>
+                            <div id="Ptwo">
+                            <h3 style="margin-top: 70px;">"Hii, If i say truth...this is amazing. India is incredible.I love India and Dargeeling is just Wooww!!"</h3></div>
+                            <div id="Pthree">
+                            <h3 style="margin-top: 70px;">"I loved the experience and Dargeeling is
+                                one of the most beautuful places I have ever seen."</h3></div>
+                            <div id="Pfour">
+                            <h3 style="margin-top: 70px;">"Superb , amazing.I loved the experience and Dargeeling is
+                                one of the most beautuful places I have seen."</h3></div>
+                            <div id="Pfive">
+                            <h3 style="margin-top: 70px;">"India is Incredible.I loved the experience and Dargeeling is
+                                one of the most beautuful places I have seen."</h3></div>                 
+                        </div>
+                        <fieldset id="feed_img">
+                        <legend><img onclick="showOne()" class="fimg" src="img/ac5.jfif"/>
+                        <img onclick="showTwo()" class="fimg" src="img/download (2).jfif"/>
+                        <img onclick="showThree()" class="fimg" src="img/download (1).jfif"/>
+                        <img onclick="showFour()" class="fimg" src="img/download.jfif"/>
+                        <img onclick="showFive()" class="fimg" src="img/spider4.jpg"/></legend>
+                        </fieldset>
+                    </div>
+        </main>
+        <div id="footer">
+                <div class="copyright">
+                    <h1><img src="img/logo.png" width="100px" height="100px"/>
+                        COPYRIGHT  &COPY; tourGuide 2019</h1>
+                        <h2><span style="color: orange; letter-spacing: 1px;">info@tourguide.com</span> - Jalandhar, Punjab, 144411.</h2>
+                </div>
+                <div class="list_div">
+                    <ul>
+                        <a href="#"><li>Home</li></a>
+                        <a href="#"><li>Trips</li></a>
+                        <a href="#"><li>Planning</li></a>
+                        <a href="#"><li>About</li></a>
+                    </ul>
+                </div>
+                <div class="list_div">
+                    <ul>
+                        <a href="#"><li>FAQ</li></a>
+                        <a href="#"><li>Guides</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Contact</li></a>
+                    </ul>
+                </div>
+                <div class="list_div">
+                    <i style="background:#343433;padding: 10px 15px 10px 15px; color: white;margin-top: 20px;"
+                     class="fab fa-facebook-f"></i>
+                    <i style="background:#343433;padding: 10px 15px 10px 15px; color: white;margin-top: 20px;"
+                     class="far fa-envelope"></i>
+                    <br><br>
+                    <strong style="color: white; font-size: 16px; font-family: 'Raleway', sans-serif;letter-spacing: 1px;">
+                        Design by <span style="color: orange; font-size: 16px; font-family: 'Raleway', sans-serif;letter-spacing: 1px;">Adarsh Singh Tiwari.</span></strong> <br><br>
+                        <strong style="color: white; font-size: 16px; font-family: 'Raleway', sans-serif;letter-spacing: 1px;">
+                            Marketing by <span style="color: orange; font-size: 16px; font-family: 'Raleway', sans-serif;letter-spacing: 1px;">yourGuides.</span></strong>
+                    
+                </div>     
+            </div>
+
+        <script>
+
+            var intervalId, currentImageNumber;
+            function startSlide(){
+                intervalId = setInterval(setImages, 2000); //1.jpg
+            }
+            function setImages(){
+                var imageSrc = document.getElementById("image1").getAttribute('src');
+                currentImageNumber = imageSrc.substring(imageSrc.lastIndexOf("/")+1, imageSrc.lastIndexOf("/")+2);
+                if(currentImageNumber==3){
+                    currentImageNumber = 0;
+                }
+                document.getElementById("image1").setAttribute('src', ""+(Number(currentImageNumber)+1)+".jpg");
+            }            
+
+
+
+            function change(on){
+                document.getElementById('here').src = on.src;
+            }
+            function showOne(){
+                document.getElementById('Pone').style.display = "block";
+                document.getElementById('Ptwo').style.display = "none";
+                document.getElementById('Pthree').style.display = "none";
+                document.getElementById('Pfour').style.display = "none";
+                document.getElementById('Pfive').style.display = "none";
+            }
+            function showTwo(){
+                document.getElementById('Pone').style.display = "none";
+                document.getElementById('Ptwo').style.display = "block";
+                document.getElementById('Pthree').style.display = "none";
+                document.getElementById('Pfour').style.display = "none";
+                document.getElementById('Pfive').style.display = "none";
+            }
+            function showThree(){
+                document.getElementById('Pone').style.display = "none";
+                document.getElementById('Ptwo').style.display = "none";
+                document.getElementById('Pthree').style.display = "block";
+                document.getElementById('Pfour').style.display = "none";
+                document.getElementById('Pfive').style.display = "none";
+            }
+            function showFour(){
+                document.getElementById('Pone').style.display = "none";
+                document.getElementById('Ptwo').style.display = "none";
+                document.getElementById('Pthree').style.display = "none";
+                document.getElementById('Pfour').style.display = "block";
+                document.getElementById('Pfive').style.display = "none";
+            }
+            function showFive(){
+                document.getElementById('Pone').style.display = "none";
+                document.getElementById('Ptwo').style.display = "none";
+                document.getElementById('Pthree').style.display = "none";
+                document.getElementById('Pfour').style.display = "none";
+                document.getElementById('Pfive').style.display = "block";
+            }
+        </script>
+    </body>
+</html>

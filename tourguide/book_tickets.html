@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="book_tickets_css.css"/>
+
+        <script>
+                function add()
+                {
+                    var a = parseInt(document.getElementById('num').value);
+                    document.getElementById('num').value = a+1;
+                }
+                function sub()
+                {
+                    var b = Number(document.getElementById('num').value);
+                    if(b>0){
+                        document.getElementById('num').value = b-1;
+                    }else{
+                        document.getElementById('num').value = b;
+                    }
+                } 
+
+                function show(){
+                    var fname = document.getElementById("fname").value;
+                    var lname = document.getElementById("lname").value;
+                    var mobile = document.getElementById("mobile").value;
+                    var email = document.getElementById("email").value;
+                    var arrival = document.getElementById("arrival").value;
+                    var res = confirm("Name: "+fname+" "+lname+"\n"+"Contact: "+mobile+"\n"
+                    +"Location: Dargeeling Himalayan Railway\nArrival: "+arrival+
+                    "\nCosts: Rs.5000\n\nAre u sure want to continue!!");
+                    if(res==true){
+                        alert("Ticket have been booked.\nMr.Anand will receice you on "+arrival);
+                    }else{
+                        alert("We hope you come again:)");
+                    }
+                }         
+            </script>
+    </head>
+    <body onload="startSlide()">
+        <header>
+            <div id="header">
+                <a href="home2.html">Home</a> /<a href="allTours.html">East Tourism</a> /
+                <a href="detail.html">Dargeeling</a>/ <a href="book_tickets.html">Booking</a>
+            </div>
+        </header>
+        <main>
+            <div id="main1">
+             <form>   
+            <h1 style="margin-left: 270px;">Book Your Tickets</h1>
+            <input type="text" class="box" id="fname" placeholder="First Name"/>
+            <input type="text" class="box" id="lname" placeholder="Last Name"/><br>
+            <input type="tel" class="box2" id="mobile" placeholder="Mobile Number"/><br>
+            <input type="email" class="box2" id="email" placeholder="Email"/><br>
+            &nbsp;&nbsp;Permanent Address:<br>
+            <textarea rows="5" cols="5" class="box3"></textarea><br><br>
+            &nbsp;&nbsp;Current Address:<br>
+            &nbsp;&nbsp;<input type="checkbox"/> Same as Permanent Address.<br>
+            <textarea rows="5" cols="5" class="box3"></textarea><br>
+            &nbsp;&nbsp;Arrival Date: <input type="date" class="box4" id="arrival" placeholder="date"/>
+            Departure Date: <input type="date" class="box4" placeholder="date"/><br>
+            &nbsp;&nbsp;Adults: <input type="button" value="+" onclick="add()" class="btn" style="margin-left: 55px;"/><input type="text" value="2"  id="num"/><input type="button" value="-" onclick="sub()" class="btn"/><br>
+            <input type="button" onclick="show()"value="SUBMIT" class="btn2"/>
+            </form>
+            </div>
+
+            <div id="main2">
+                <img src="1.jpg" id="image1" width="250px" height="700px" class="img"/>
+
+            </div>
+        </main>
+        <footer></footer>
+
+        <script>
+             var intervalId, currentImageNumber;
+            function startSlide(){
+                intervalId = setInterval(setImages, 2000); //1.jpg
+            }
+            function setImages(){
+                var imageSrc = document.getElementById("image1").getAttribute('src');
+                currentImageNumber = imageSrc.substring(imageSrc.lastIndexOf("/")+1, imageSrc.lastIndexOf("/")+2);
+                if(currentImageNumber==3){
+                    currentImageNumber = 0;
+                }
+                document.getElementById("image1").setAttribute('src', ""+(Number(currentImageNumber)+1)+".jpg");
+            }
+        </script>
+    </body>
+</html>

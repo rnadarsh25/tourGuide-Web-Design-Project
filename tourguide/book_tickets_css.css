@@ -1,0 +1,127 @@
+body{
+    background: url('img/forest-2560x1440-mountains-sunset-river-hd-15667.jpg') fixed;
+    background-size: cover;
+    color: white;
+    margin: 0px 10px 0px 10px;
+}
+#header{
+    background: #00cd66;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 102%;
+    overflow: hidden;
+    height: 25px;
+    line-height: 25px;
+    margin: 0px 0px 5px -10px;
+}
+#header a{
+    text-decoration: none;
+    color: white;
+}
+#main1{
+    float: left;
+    border: transparent;
+    width: 75%;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.box{
+    width: 432px;
+    height: 45px;
+    line-height: 45px;
+    border: transparent;
+    border-radius: 2px;
+    border-style: groove;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    outline: none;
+    margin: 10px 5px 10px 10px;
+}
+.box2{
+    width: 890px;
+    height: 45px;
+    line-height: 45px;
+    border: transparent;
+    border-radius: 2px;
+    border-style: groove;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    outline: none;
+    margin: 10px 5px 10px 10px;
+}
+.box3{
+    width: 885px;
+    border: transparent;
+    border-style: groove;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    outline: none;
+    margin: 10px 5px 10px 10px;
+}
+.box4{
+    width: 300px;
+    height: 45px;
+    line-height: 45px;
+    border: transparent;
+    border-radius: 2px;
+    border-style: groove;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    outline: none;
+    margin: 20px 5px 5px 3px;
+}
+#num{
+    outline: none;
+    width: 150px;
+    height: 37px;
+    text-align: center;
+    line-height: 37px;
+    border: transparent;
+    border-style: groove;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 50px 0px 20px 0px;
+}
+.btn{
+    width: 50px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    border: transparent;
+    background: #df293a;
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 50px 0px 20px 0px;
+    outline: none;
+}
+.btn2{
+    width: 900px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: transparent;
+    background: #df293a;
+    color: white;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 50px 0px 100px 10px;
+    outline: none;
+}
+.box4,.btn,.btn2:hover{
+    cursor: pointer;
+}
+#main2{
+    float: right;
+    border: transparent;
+    width: 20%;
+    padding: 25px;
+    background: whitesmoke;
+    margin-top: 110px;
+}
+.img:hover{
+    opacity: .7;
+    cursor: pointer;
+}

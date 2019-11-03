@@ -1,0 +1,115 @@
+body{
+    background: url('img/forest-2560x1440-mountains-sunset-river-hd-15667.jpg');
+    background-size: cover;
+}
+#header{
+    color: white;
+    font-size: 25px;
+    margin: 0px 0px 20px 50px;
+    font-family: 'Prata', serif;
+    letter-spacing: 1px;
+    color: #00cd66;
+}
+#login_info{
+    width: 40%;
+    height: 600px;
+    color: white;
+    border: transparent;
+    
+}
+#login_two{
+    background:white;
+    float: right; 
+    width: 39%; 
+    height: 520px; 
+    border: transparent;
+    margin-right: 120px;
+}
+#signup_offer{
+    font-size: 15px;
+    font-family: 'Turret Road', cursive;
+    letter-spacing: 2px;
+    color: white;
+    background: #00cd66;
+    padding: 7px 7px 7px 50px;
+    margin: 0px;
+    border: transparent;
+}
+#login_detail{
+    font-family: 'Raleway', sans-serif;
+    /* color: #df293a; */
+    margin: 10px;
+    margin-left: 50px;
+    letter-spacing: 1px;
+}
+#code{
+    width: 40px;
+    padding: 5px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+#mobile{
+    width:300px;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace; 
+}
+#verify_btn{
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    background: #00cd66;
+    border: transparent;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+}
+#sign_opt{
+    height: 90px;
+    margin-left: 0px; 
+    position: relative;
+    top: 120px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    border-color: white;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: none;
+}
+#travel_agent{
+    margin: 20px 0px 10px 40px;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    background: transparent;
+    border: transparent;
+    border-right: 1px solid green;
+    padding: 0px 15px 0px 0px;
+    color: black;
+    outline: none;
+}
+#corp{
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    background: transparent;
+    border: transparent;
+    color: black;
+    outline: none;
+}
+#legend{
+    margin-left: 40px;
+}
+#verify_btn, #travel_agent, #corp:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="hotel.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+         <link href="https://fonts.googleapis.com/css?family=Arapey|Exo|Great+Vibes|Orbitron|Play|Playfair+Display+SC|Prata|Satisfy|Tangerine&display=swap" 
+         rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Be+Vietnam|Raleway|Turret+Road&display=swap"
+          rel="stylesheet">
+    </head>
+    <body>
+            <div id="header">
+                    <div id="heading">
+                            <img src="img/logo.png" width="50px" height="50px"/>
+                            <h1 style="margin: 0px; display: inline;">tourGuide</h1>
+                            <span id="para1" style="display: block;">travel to incredible India!</span>
+                        </div>
+                        
+                        <div id="search_box">
+                            <input type="text" id="search" placeholder="search..."/>
+                        </div>
+                        
+                        <div id="login_div">
+                            <a href="login.html"><input type="button" id="login" value="login/signup"/></a>
+                        </div>
+                </div>
+        <main>
+                <div id="details_nav">
+                        <ul>
+                            <a href="home2.html"><li>Home</li></a>
+                            <a href="detail.html"><li>Dargeeling
+                                <!-- <ul>
+                                    <li>Dargeeling Himalayan Railway</li>
+                                    <li>Tiger Hills</li>
+                                    <li>Batasia Loop</li>
+                                    <li>Dargeeling Ropeway</li>
+                                    <li>Nightangle Park</li>
+                                </ul> -->
+                            </li></a>
+                            <a href="allTours.html"><li>Tours</li></a>
+                            <a href="hotels.html"><li class="active">Hotels</li></a>
+                            <li>Map</li>
+                            <a href="photos.html"><li>Gallary</li></a>
+                            <a href="food.html"><li>Food</li></a>
+                        </ul>
+                    </div> 
+                    
+                <div id="left"></div>
+                <div id="right"></div>  
+                    
+                <div id="check_div">
+                    <h1 style="font-family: 'Turret Road', cursive;color: #df293a; font-size:40px;">Book your hotel</h1>
+                    <input type="date" class="check" placeholder="Check In"/>
+                    <input type="date" class="check" placeholder="Check Out"/>
+                    <input type="button" value="search" id="search_btn"/>
+                </div>        
+                <div id="add3">
+                    <img src="1.png" width="960px" height="70px"/>
+                </div>
+
+            <div id="leftbar">
+                <div id="leftbarheading" style="text-align: center;"> 
+                    <h3 style="float: left; width: 48%; text-align: left;margin-left:5px;s">Filter By</h3>
+                    <h3 style="float: right; width: 48%; text-align: right;margin-right:5px;">Reset all</h3>
+                </div>
+
+                <div id="price_range">
+                    <h5>Price Range Per person</h5>
+                    <div id="range">
+                        <input type="checkbox" />Rs.100 - Rs.1000<br><br>
+                        <input type="checkbox" />Rs.1000 - Rs.2000<br><br>
+                        <input type="checkbox" />Rs.2000 - Rs.3000<br><br>
+                        <input type="checkbox" />Rs.3000 - Rs.4000<br><br>
+                        <input type="checkbox" />Rs.4000 - Rs.5000<br><br>
+                    </div>
+                </div>
+
+                <div id="duration">
+                    <h3>Duration</h3>
+                    <div id="days_duration">
+                        <input type="checkbox"/> 0 - 4 Days<br><br>
+                        <input type="checkbox"/> 4 - 10 Days<br><br>
+                        <input type="checkbox"/> 10 - 20 Days<br><br>
+                        <input type="checkbox"/> 20 - 40 Days<br><br>
+                        <input type="checkbox"/> 40 - 60 Days<br><br>
+                    </div>
+                </div>
+
+                <div id="combined-with">
+                    <h3>combined-with</h3>
+                    <div id="combined_places">
+                        <input type="checkbox"/> Shimla<br><br>
+                        <input type="checkbox"/> Manali<br><br>
+                        <input type="checkbox"/> Delhi<br><br>
+                        <input type="checkbox"/> Himanchal<br><br>
+                        <input type="checkbox"/> Kedarnath<br><br>
+                    </div>
+                </div>
+
+                <div id="starting_from">
+                    <h3>starting_from</h3>
+                    <div id="starting_places">
+                        <input type="checkbox"/> Delhi<br><br>
+                        <input type="checkbox"/> Mumbai<br><br>
+                        <input type="checkbox"/> Goa<br><br>
+                        <input type="checkbox"/> Uttar Pradesh<br><br>
+                        <input type="checkbox"/> Madhya Pradesh<br><br>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="list">
+                    <div id="singleitem" style="border-radius:10px;">
+                        <img src="hotels/h1.jpg" width="45%" height="250px;" style="float: left; border-radius: 10px 0px 0px 10px;"/>
+                            <div id="info" style="float: left;height: 125px; margin-left: 10px;border: transparent; width:30%;">
+                                <h3 style="margin: 10px 0px 10px 0px; font-size: 20px;font-family: 'Raleway', sans-serif;">Mountain Homestay</h3>
+                                <h4 style="margin: 0px 0px 10px 0px; color: #df293a;font-family: 'Raleway', sans-serif; font-size: 18px;">1.0 km from city center</h4>
+                                <h4 style="margin: 0px; font-size: 20px; color: darkgreen;">
+                                    <strong>
+                                    <span style="padding:4px 6px 4px 6px;border-radius:5px;font-size: 18px; font-weight:bold; color: white;background: darkgreen;">9.8</span style="font-family: 'Raleway', sans-serif;">
+                                     wonderful!</strong></h4>
+                            </div>
+                            <div id="package_price" style="float: right; background:white; text-align: center;width: 23%; height: 247px; border:transparent;" >
+                                <h3 style="margin-bottom:0px; font-size: 18px;
+                                 color:grey;font-family: 'Raleway', sans-serif;">Starting from</h3> <br>
+                                <h2 style="margin-bottom: 20px;margin-top: -10px; color: #df293a;font-family: 'Raleway', sans-serif;"><strong>INR 1,600</strong></h2>
+                                <a href="http://www.booking.com"><input type="button" value="Book Now" id="continue_btn"/></a>
+                            </div>
+                                
+                            </div>
+                            <div id="singleitem" style="border-radius: 10px;">
+                                    <img src="hotels/h2.jpg" width="45%" height="250px;" style="float: left;border-radius: 10px 0px 0px 10px;"/>
+                                        <div id="info" style="float: left;height: 125px; margin-left: 10px;border: transparent; width:30%;">
+                                            <h3 style="margin: 10px 0px 10px 0px; font-size: 20px;font-family: 'Raleway', sans-serif;">Little Singamari Homestay</h3>
+                                            <h4 style="margin: 0px 0px 10px 0px; color: #df293a;font-family: 'Raleway', sans-serif; font-size: 18px;">3.0 km from city center</h4>
+                                            <h4 style="margin: 0px; font-size: 20px; color: darkgreen;">
+                                            <strong>
+                                            <span style="padding:4px 6px 4px 6px;border-radius:5px;font-size: 18px; font-weight:bold; color: white;background: darkgreen;">9.2</span style="font-family: 'Raleway', sans-serif;">
+                                             wonderful!</strong></h4>
+                                        </div>
+                                        <div id="package_price" style="float: right; text-align: center;width: 23%; height: 247px; border:transparent;" >
+                                            <h3 style="margin-bottom:0px; font-size: 18px;
+                                            font-family: 'Raleway', sans-serif;color:grey;">Starting from</h3> <br>
+                                            <h2 style="margin-bottom: 20px;margin-top: -10px; color: #df293a;font-family: 'Raleway', sans-serif;"><strong>INR 2160</strong></h2>
+            
+                                            <a href="detail.html"><input type="button" value="Book Now" id="continue_btn"/></a>
+                                        </div>
+                                            
+                                        </div>
+                                        <div id="singleitem" style="border-radius: 10px;">
+                                                <img src="hotels/h3.jpg" width="45%" height="250px;" style="float: left;border-radius: 10px 0px 0px 10px;"/>
+                                                    <div id="info" style="float: left;height: 125px; margin-left: 10px;border: transparent; width:30%;">
+                                                        <h3 style="margin: 10px 0px 10px 0px; font-size: 20px;font-family: 'Raleway', sans-serif;">Central Heritage Resort & Spa</h3>
+                                                        <h4 style="margin: 0px 0px 10px 0px; color: #df293a;font-family: 'Raleway', sans-serif; font-size: 18px;">0.6 km from chowrasta</h4>
+                                                        <h4 style="margin: 0px; font-size: 20px; color: darkgreen;">
+                                                        <strong>
+                                                        <span style="padding:4px 6px 4px 6px;border-radius:5px;font-size: 18px; font-weight:bold; color: white;background: darkgreen;">9.6</span style="font-family: 'Raleway', sans-serif;">
+                                                         wonderful!</strong></h4>
+                                                    </div>
+                                                    <div id="package_price" style="float: right; text-align: center;width: 23%; height: 247px; border:transparent;" >
+                                                        <h3 style="margin-bottom:0px; font-size: 18px;
+                                                        font-family: 'Raleway', sans-serif;color:grey;">Starting from</h3> <br>
+                                                        <h2 style="margin-bottom: 20px;margin-top: -10px; color: #df293a;font-family: 'Raleway', sans-serif;"><strong>INR 2308</strong></h2>
+                        
+                                                        <a href="detail.html"><input type="button" value="Book Now" id="continue_btn"/></a>
+                                                    </div>
+                                                        
+                                                    </div>
+                                                    <div id="singleitem" style="border-radius: 10px;">
+                                                            <img src="hotels/h4.jpg" width="45%" height="250px;" style="float: left;border-radius: 10px 0px 0px 10px;"/>
+                                                                <div id="info" style="float: left;height: 125px; margin-left: 10px;border: transparent; width:30%;">
+                                                                    <h3 style="margin: 10px 0px 10px 0px; font-size: 20px;font-family: 'Raleway', sans-serif;">Sinclairs Dargeeling</h3>
+                                                                    <h4 style="margin: 0px 0px 10px 0px; color: #df293a;font-family: 'Raleway', sans-serif; font-size: 18px;">1.7 km from peace pakoda</h4>
+                                                                    <h4 style="margin: 0px; font-size: 20px; color: darkgreen;">
+                                                                    <strong>
+                                                                    <span style="padding:4px 6px 4px 6px;border-radius:5px;font-size: 18px; font-weight:bold; color: white;background: darkgreen;">8.9</span style="font-family: 'Raleway', sans-serif;">
+                                                                     wonderful!</strong></h4>
+                                                                </div>
+                                                                <div id="package_price" style="float: right; text-align: center;width: 23%; height: 247px; border:transparent;" >
+                                                                    <h3 style="margin-bottom:0px; font-size: 18px;
+                                                                    font-family: 'Raleway', sans-serif;color:grey;">Starting from</h3> <br>
+                                                                    <h2 style="margin-bottom: 20px;margin-top: -10px; color: #df293a;font-family: 'Raleway', sans-serif;"><strong>INR 1160</strong></h2>
+                                    
+                                                                    <a href="detail.html"><input type="button" value="Book Now" id="continue_btn"/></a>
+                                                                </div>
+                                                                    
+                                                                </div>
+                                                                <div id="singleitem" style="border-radius: 10px;">
+                                                                        <img src="hotels/h5.jpg" width="45%" height="250px;" style="float: left;border-radius: 10px 0px 0px 10px;"/>
+                                                                            <div id="info" style="float: left;height: 125px; margin-left: 10px;border: transparent; width:30%;">
+                                                                                <h3 style="margin: 10px 0px 10px 0px; font-size: 20px;font-family: 'Raleway', sans-serif;">Hotel White yak</h3>
+                                                                                <h4 style="margin: 0px 0px 10px 0px; color: #df293a;font-family: 'Raleway', sans-serif; font-size: 18px;">2.0 km from city center</h4>
+                                                                                <h4 style="margin: 0px; font-size: 20px; color: darkgreen;">
+                                                                                <strong>
+                                                                                <span style="padding:4px 6px 4px 6px;border-radius:5px;font-size: 18px; font-weight:bold; color: white;background: darkgreen;">9.4</span style="font-family: 'Raleway', sans-serif;">
+                                                                                 wonderful!</strong></h4>
+                                                                            </div>
+                                                                            <div id="package_price" style="float: right; text-align: center;width: 23%; height: 247px; border:transparent;" >
+                                                                                <h3 style="margin-bottom:0px; font-size: 18px;
+                                                                                font-family: 'Raleway', sans-serif;color:grey;">Starting from</h3> <br>
+                                                                                <h2 style="margin-bottom: 20px;margin-top: -10px; color: #df293a;font-family: 'Raleway', sans-serif;"><strong>INR 2060</strong></h2>
+                                                
+                                                                                <a href="detail.html"><input type="button" value="Book Now" id="continue_btn"/></a>
+                                                                            </div>
+                                                                                
+                                                                            </div>
+                                                                            <div id="singleitem" style="border-radius: 10px;">
+                                                                                    <img src="hotels/h6.jpg" width="45%" height="250px;" style="float: left;border-radius: 10px 0px 0px 10px;"/>
+                                                                                        <div id="info" style="float: left;height: 125px; margin-left: 10px;border: transparent; width:30%;">
+                                                                                            <h3 style="margin: 10px 0px 10px 0px; font-size: 20px;font-family: 'Raleway', sans-serif;">Little Tibet Resort</h3>
+                                                                                            <h4 style="margin: 0px 0px 10px 0px; color: #df293a;font-family: 'Raleway', sans-serif; font-size: 18px;">1.0 km from chowrasta</h4>
+                                                                                            <h4 style="margin: 0px; font-size: 20px; color: darkgreen;">
+                                                                                            <strong>
+                                                                                            <span style="padding:4px 6px 4px 6px;border-radius:5px;font-size: 18px; font-weight:bold; color: white;background: darkgreen;">9.8</span style="font-family: 'Raleway', sans-serif;">
+                                                                                             wonderful!</strong></h4>
+                                                                                        </div>
+                                                                                        <div id="package_price" style="float: right; text-align: center;width: 23%; height: 247px; border:transparent;" >
+                                                                                            <h3 style="margin-bottom:0px; font-size: 18px;
+                                                                                            font-family: 'Raleway', sans-serif;color:grey;">Starting from</h3> <br>
+                                                                                            <h2 style="margin-bottom: 20px;margin-top: -10px; color: #df293a;font-family: 'Raleway', sans-serif;"><strong>INR 2580</strong></h2>
+                                                            
+                                                                                            <a href="detail.html"><input type="button" value="Book Now" id="continue_btn"/></a>
+                                                                                        </div>
+                                                                                            
+                                                                                        </div>
+                                                                                        <div id="singleitem" style="border-radius: 10px;">
+                                                                                                <img src="hotels/h7.jpg" width="45%" height="250px;" style="float: left;border-radius: 10px 0px 0px 10px;"/>
+                                                                                                    <div id="info" style="float: left;height: 125px; margin-left: 10px;border: transparent; width:30%;">
+                                                                                                        <h3 style="margin: 10px 0px 10px 0px; font-size: 20px;font-family: 'Raleway', sans-serif;">Mystic Rodhi Resort</h3>
+                                                                                                        <h4 style="margin: 0px 0px 10px 0px; color: #df293a;font-family: 'Raleway', sans-serif; font-size: 18px;">1.0 km from Batasia Loop</h4>
+                                                                                                        <h4 style="margin: 0px; font-size: 20px; color: darkgreen;">
+                                                                                                        <strong>
+                                                                                                        <span style="padding:4px 6px 4px 6px;border-radius:5px;font-size: 18px; font-weight:bold; color: white;background: darkgreen;">9.0</span style="font-family: 'Raleway', sans-serif;">
+                                                                                                         wonderful!</strong></h4>
+                                                                                                    </div>
+                                                                                                    <div id="package_price" style="float: right; text-align: center;width: 23%; height: 247px; border:transparent;" >
+                                                                                                        <h3 style="margin-bottom:0px; font-size: 18px;
+                                                                                                        font-family: 'Raleway', sans-serif;color:grey;">Starting from</h3> <br>
+                                                                                                        <h2 style="margin-bottom: 20px;margin-top: -10px; color: #df293a;font-family: 'Raleway', sans-serif;"><strong>INR 1590</strong></h2>
+                                                                        
+                                                                                                        <a href="detail.html"><input type="button" value="Book Now" id="continue_btn"/></a>
+                                                                                                    </div>
+                                                                                                        
+                                                                                                    </div>
+    <div style="text-align: right;"><a style="text-decoration: none; color:#df293a;" href="#east.html">See all >></a></div>
+                </div>
+        </main>
+        <div id="footer">
+                <div class="copyright">
+                    <h1><img src="img/logo.png" width="100px" height="100px"/>
+                        COPYRIGHT  &COPY; tourGuide 2019</h1>
+                        <h2><span style="color: orange; letter-spacing: 1px;">info@tourguide.com</span> - Jalandhar, Punjab, 144411.</h2>
+                </div>
+                <div class="list_div">
+                    <ul>
+                        <a href="#"><li>Home</li></a>
+                        <a href="#"><li>Trips</li></a>
+                        <a href="#"><li>Planning</li></a>
+                        <a href="#"><li>About</li></a>
+                    </ul>
+                </div>
+                <div class="list_div">
+                    <ul>
+                        <a href="#"><li>FAQ</li></a>
+                        <a href="#"><li>Guides</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Contact</li></a>
+                    </ul>
+                </div>
+                <div class="list_div">
+                    <i style="background:#343433;padding: 10px 15px 10px 15px; color: white;margin-top: 20px;"
+                     class="fab fa-facebook-f"></i>
+                    <i style="background:#343433;padding: 10px 15px 10px 15px; color: white;margin-top: 20px;"
+                     class="far fa-envelope"></i>
+                    <br><br>
+                    <strong style="color: white; font-size: 16px; font-family: 'Raleway', sans-serif;letter-spacing: 1px;">
+                        Design by <span style="color: orange; font-size: 16px; font-family: 'Raleway', sans-serif;letter-spacing: 1px;">Adarsh Singh Tiwari.</span></strong> <br><br>
+                        <strong style="color: white; font-size: 16px; font-family: 'Raleway', sans-serif;letter-spacing: 1px;">
+                            Marketing by <span style="color: orange; font-size: 16px; font-family: 'Raleway', sans-serif;letter-spacing: 1px;">yourGuides.</span></strong>
+                
+                </div>     
+            </div> 
+
+
+        <script>
+        function showPlaces(){
+            document.getElementById('showplaces').style.display = "block";
+            document.getElementById('places').style.background = "#00CD66";
+        }
+        function hidePlaces(){
+            document.getElementById('showplaces').style.display = "none";
+            document.getElementById('places').style.background = "";
+        }
+        </script>
+    </body>
+</html>

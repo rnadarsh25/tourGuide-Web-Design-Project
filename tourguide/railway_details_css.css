@@ -1,0 +1,545 @@
+body{
+    margin-top: 0px;
+    background: whitesmoke;
+}
+#heading{
+    float: left;
+    width: 28%;
+    border: transparent;
+    color: #00CD66;
+    font-size: 20px;
+    margin-left: 1px;
+    font-family: 'Play', sans-serif;
+/* font-family: 'Exo', sans-serif;*/
+    /*font-family: 'Satisfy', cursive;*/
+    /*font-family: 'Great Vibes', cursive;*/
+    /*font-family: 'Orbitron', sans-serif;*/
+    /*font-family: 'Playfair Display SC', serif;*/
+    font-family: 'Prata', serif;
+    /*font-family: 'Arapey', serif;*/
+    /*font-family: 'Tangerine', cursive;*/
+}
+#para1{
+    /*font-family: 'Tangerine', cursive;*/
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+
+}
+#search_box{
+    text-align: center;
+    width: 42%;
+    float: left;
+    border: transparent;
+    height: 84px;
+    text-align: center;
+}
+#search{
+    width: 500px;
+    height: 51px;
+    line-height: 51px;
+    border: 1px solid #00CD66;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 0px 0px 0px 10px;
+    margin-top: 15px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    outline: none;
+}
+#login_div{
+    text-align: right;
+    width: 29.5%;
+    float: left;
+    border: transparent;
+}
+#login{
+    width: 150px;
+    height: 84px;
+    line-height: 84px;
+    background: transparent;
+    border: transparent;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: darkgreen;
+    font-weight: bold;
+    outline: none;
+    margin-right: -3px;
+}
+#login:hover{
+    background: darkgreen;
+    cursor: pointer;
+    color: white;
+}
+#details_nav{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+#details_nav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#details_nav ul li{
+    float: left;
+    width: 179.5px;
+    height: 40px;
+    line-height: 40px;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+    text-align: center;
+    background: #00CD66;
+    color: white;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+#details_nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+#details_nav ul li ul li{
+    width: 300px;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    display: none;
+}
+#details_nav ul li:hover{
+    background: darkgreen;
+    cursor: pointer;
+}
+#details_nav ul li:hover ul li{
+    display: block;
+}
+#details_nav ul .active{
+    background: #df293a;
+}
+
+#back_btn{
+    float: left;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background: #df293a;
+    border: transparent;
+    margin: 10px 0px 0px 20px;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px; 
+}
+#back_btn:hover{
+    cursor: pointer;
+}
+#cont_btn{
+    float: right;
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background: #df293a;
+    border: transparent;
+    margin: 10px 20px 0px 0px;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+#cont_btn:hover{
+    cursor: pointer;
+}
+
+
+
+#main2_img{
+    border: transparent;
+    width: 1193px;
+    height: 540px;
+    margin: 10px 0px 10px 35px;
+    background: url('tourists/majuli.jpg') fixed;
+    background-size: cover;
+    position: absolute;
+    top: 170px;
+    text-align: center;
+}
+
+#main2_heading{
+    border: transparent;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    margin: 170px 0px 50px 0px;
+}
+#main2_btn{
+    height:50px;
+    line-height: 40px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    border: transparent;
+    border-radius: 2px;
+    background: #df293a;
+    color: white;
+    border-style: groove;
+    outline: none;
+}
+#main2_btn:hover{
+    cursor: pointer;
+}
+
+
+#all{
+    border: transparent;
+    width: 98.5%;
+    position: absolute;
+    top: 730px;
+}
+#info{
+    border: 1px solid #df293a;
+    width: 48%;
+    /* height: 400px; */
+    float: left;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    margin: 5px 0px 5px 35px;
+}
+#info_img{
+    width: 45%;
+    height: 415px;
+    border: transparent;
+    float: right;
+    text-align: right;
+    background: url('img/railway.jpg');
+    background-size:cover;
+    border: 1px solid #df293a;
+    margin: 5px 35px 5px 0px;
+}
+#date_loc{
+    /* position: absolute;
+   top: 600px;  */
+    border: 1px groove #00CD66;
+    width: 94.4%;
+    height: 200px;
+    margin: 0px 35px 5px 35px;
+    float: left;
+}
+.div_date{
+    width: 33%;
+    height: 200px;
+    border: transparent;
+    float: left;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+}
+
+
+#gallary_box{
+    width: 94.6%;
+    height: 500px;
+    border: transparent;
+    float: left;
+    overflow: hidden;
+    background: url('img/forest-2560x1440-mountains-sunset-river-hd-15667.jpg') fixed;
+    background-size: cover;
+    text-align: center;
+    margin: 10px 0px 30px 35px;
+    border-radius: 10px;
+}
+#gallary_btn{
+    outline: none;
+    height: 50px;
+    width: 300px;
+    line-height: 50px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    background: #df293a;
+    color: white;
+    border: transparent;
+    border-radius: 2px;
+    margin-top:200px; 
+}
+#gallary_btn:hover{
+    cursor: pointer;
+}
+#close_btn{
+    display: none;
+    outline: none;
+    position: absolute;
+    right: 35px;
+    width: 65px;
+    height: 65px;
+    border: 5px solid white;;
+    border-radius: 50%;
+    background: grey;
+    color: white;
+    font-size: 30px;
+}
+#close_btn:hover{
+    background: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: #df293a;
+    cursor: pointer;
+}
+#gallary_container{
+    display: none;
+    position: relative;
+    width: 7245px;
+    animation-name: gallary;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    margin-left: -570px;
+}
+.gallary_img{
+    float: left;
+    /* display: block; */
+    width: 800px;
+    height: 400px;
+    margin: 70px 5px 0px 0px;
+    border-radius: 10px;
+}
+@keyframes gallary{
+    0%{
+        left: 0px;
+    }
+    10%{
+        left: 0px;
+    }
+    13%{
+        left: -810px;
+    }
+    23%{
+        left: -810px;
+    }
+    26%{
+        left: -1620px;
+    }
+    36%{
+        left:-1620px;
+    }
+    39%{
+        left: -2430px;
+    }
+    49%{
+        left: -2430px;
+    }
+    52%{
+        left: -3240px;
+    }
+    62%{
+        left: -3240px;
+    }
+    65%{
+        left: -4050px;
+    }
+    75%{
+        left: -4050px;
+    }
+    78%{
+        left: -4860px;
+    }
+    88%{
+        left: -4860px;
+    }
+    
+
+}
+#more_info{
+    border:1px solid #df293a;
+    width: 46%;
+    float: left;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    margin: 5px 0px 5px 35px;
+}
+
+#more_info2{
+    border:1px solid #df293a;
+    width: 46%;
+    margin: 5px 35px 5px 0px;
+    float: right;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+
+}
+#feedback{
+    border: transparent;
+    width: 100%;
+    height: 500px;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+    background: #00CD66;
+    color: white;
+}
+#feed{
+    border: transparent;
+    height:200px;
+    width: 100%; 
+}
+#Pone{
+    margin-left: 200px;
+    display: block;
+    width: 70%;
+    border: transparent;
+    position: absolute;
+    top: 110rem;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+#Ptwo{
+    margin-left: 200px;
+    display: none;
+    width: 70%;
+    border: transparent;
+    position: absolute;
+    top: 110rem;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+#Pthree{
+    margin-left: 200px;
+    display: none;
+    width: 70%;
+    border: transparent;
+    position: absolute;
+    top: 110rem;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+#Pfour{
+    margin-left: 200px;
+    display: none;
+    width: 70%;
+    border: transparent;
+    position: absolute;
+    top: 110rem;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+#Pfive{
+    margin-left: 200px;
+    display: none;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    width: 70%;
+    border: transparent;
+    position: absolute;
+    top: 110rem;
+}
+#feed_img{
+    border: 1px solid white;
+    margin-top: 40px;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: none;
+}
+.fimg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: all .5s ease-in-out;
+}
+.fimg:hover{
+    cursor: pointer;
+    width: 170px;
+    height: 170px;
+}
+
+#book_ask{
+    float: left;
+    width: 100%;
+    height: 200px;
+    background: darkgreen;;
+    text-align: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+#book_ask a{
+    text-decoration: none;
+}
+.book_ask_btn{
+    width: 250px;
+    height: 45px;
+    line-height: 45px;
+    background: #df293a;
+    color: white;
+    border: transparent;
+    border-radius: 2px;
+    outline: none;font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin: 10px;
+    transition: all .01s ease-in-out;
+}
+.book_ask_btn:hover{
+    cursor: pointer;
+    background: orange;
+}
+
+#footer{
+    float: left;
+    border: transparent;
+    background: darkgreen;
+    width: 100%;
+    height: 400px;
+}
+.copyright{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    border-bottom: 1px solid white;
+    font-size: 13px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+}
+.list_div{
+    width: 25%;
+    height: 200px;
+    border: transparent;
+    float: left;
+}
+.list_div ul{
+    list-style: none;
+}
+.list_div ul a{
+    text-decoration: none;
+    color: white;
+}
+.list_div ul a li{
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    border-bottom: 1px groove grey;
+    font-family: 'Raleway', sans-serif;
+}
+.list_div ul a li:hover{
+    color: orange;
+}
+
+#left{
+    float: left;
+    height: 160rem;
+    border-right: 15px solid #00CD66;
+    width: 0px;
+    border-top-right-radius: 30%;  
+}
+#right{
+    float: right;
+    height: 160rem;
+    border-right: 15px solid #00CD66;
+    width: 0px;
+    margin-right:2px;
+    border-top-left-radius: 30%; 
+}

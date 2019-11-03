@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="home2.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+         <link href="https://fonts.googleapis.com/css?family=Arapey|Exo|Great+Vibes|Orbitron|Play|Playfair+Display+SC|Prata|Satisfy|Tangerine&display=swap" 
+         rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Be+Vietnam|Raleway|Turret+Road&display=swap"
+          rel="stylesheet">
+    </head>
+    <body>
+            <div id="header">
+                    <div id="heading">
+                        <img src="img/logo.png" width="50px" height="50px"/>
+                        <h1 style="margin: -10px 0px 0px 0px;display: inline-block;">tourGuide</h1>
+                        <span id="para1" style="display: block;letter-spacing:2px;">travel to incredible India!</span>
+                    </div>
+                    
+                    <div id="login_div">
+                        <a href="login.html"><input type="button" id="login" value="login/signup"/></a>
+                    </div>
+                </div>
+        <main>
+            <br><br><br>
+            <div id="search_div">
+                <div id="search_heading">
+                    <h1 style="margin: 0px;">Worlds best tourism site</h1>
+                    <span>Explore India with us</span>
+                </div>
+                <div id="search_input">
+                    <input type="text" placeholder="try dargeeling..." id="search"/>
+                    <input type="button" id="search_btn" value = "search" onclick="searchAll()"/><i id="tag" class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <div id="left"></div>
+            <div id="right"></div>
+
+            <div id="main2">
+                <div id="feature">
+                    <div class="facility">
+                            <i class="fas fa-archway" style="margin: 0px;"></i>
+                        <a href="allTours.html"><h3 style="margin-top:-70px;">Places to visit</h3></a>
+                    </div>
+                    <div class="facility">
+                            <i class="fas fa-binoculars" style="margin: 0px;"></i>
+                        <a href="#tours"><h3 style="margin-top:-70px;">Tours</h3></a>
+                    </div>
+                    <div class="facility">
+                        <i class="fa fa-bed fa-md" style="margin: 0px;"></i>
+                        <a href="hotels.html"><h3 style="margin-top:-70px;">Hotels</h3></a>
+                    </div>
+                    <div class="facility">
+                            <i class="fas fa-images" style="margin: 0px;"></i>
+                        <a href="photos.html"><h3 style="margin-top:-70px;">Photos</h3></a>
+                    </div>
+                    <div class="facility">
+                            <i class="fas fa-plane-departure" style="margin: 0px;"></i>
+                        <h3 style="margin-top:-70px;">Packages</h3>
+                    </div>
+                    <div class="facility">
+                            <i class="fas fa-concierge-bell" style="margin: 0px;"></i>
+                        <a href="food.html"><h3 style="margin-top:-70px;">Food</h3></a>
+                    </div>
+            
+                </div>
+
+                <div id="explore">
+                        <a href="#tours"><input type="button" value="Explore" id="explore_btn"/></a>
+                    </div>
+                    <br><br>
+                    <a name="tours">
+                        <div id="all_four">
+                            <h1 style="font-family: 'Turret Road', cursive; font-size: 40px;">Explore more about India!</h1>
+                            <div id="premium">
+                                <img src="img/goa.jpg" width="590px" height="300px"/>
+                            </div>
+                            <div id="four_dir">
+                                <img src="img/banaras.jpg" width="595px" height="300px"/>
+                            </div>
+                            <div id="state_tour">
+                                <img src="img/tajmahal.jpg" width="590px" height="300px"/>
+                            </div>
+                            <div id="adv_tour">
+                                <img src="img/jodhpur.jpg" width="595px" height="300px"/>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div id="all_four_two">
+                           <div id="premium">
+                                <h3 style="margin: -20px 50px 0px 30px;">Premium tours</h3>
+                            </div>
+                            <div id="four_dir">
+                                <a href="allTours.html" style="text-decoration: none; color: #df293a;">
+                                    <h3 style="margin: -20px 50px 0px 30px;">tour 4 corners</h3></a>
+                            </div>
+                            <div id="state_tour">
+                                <h3 style="margin: -20px 50px 0px 30px;">state tours</h3>
+                            </div>
+                            <div id="adv_tour">
+                                <h3 style="margin: -20px 50px 0px 30px;">adventure tours</h3>
+                            </div>
+                            <div id="go_div">
+                                <input type="button" value="start" id="go_btn" onclick="showTrailer()"/>
+                            </div>
+                    </div>
+
+                    <div id="add3">
+                            <img src="1.png" width="960px" height="90px"/>
+                        </div>
+
+                    <div id="not_sure">
+                        <div id="not_sure_heading">
+                            <h1 style="margin: 0px;">Not sure where to go?</h1>
+                            <span>let us help you.</span><br>
+                            <input type="text" id="not_sure_input" placeholder="Which place do you like..."/>
+                        </div>
+                        <div id="not_sure_slide">
+                            <div id="not_sure_container">
+                                <img src="img/redfort.jpg" class="not_sure_img"/>
+                                <img src="img/tajmahal.jpg" class="not_sure_img"/>
+                                <img src="img/tigerhills.jpg" class="not_sure_img"/>
+                                <img src="img/teesta.jpg" class="not_sure_img"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a name="gallary">
+                        <div id="gallary_div">
+                                <h1 style="font-family: 'Turret Road', cursive;font-size: 40px;">Our Memories</h1>
+
+                            <img src="tourists//hampi.jpg" id="show_gallary_img"/>
+                            <video src="video/Marvel Studios' Black Panther - Official Trailer.mp4" id="show_gallary_video"
+                             controls="controls"></video>  
+
+                            <div id="gallary_video" onclick="changeVideoOnClick(event)">
+                                
+                                 <video src="video/INCREDIBLE INDIA - by India & You.mp4" poster="img/banaras.jpg" controls="controls"
+                                 width="200px" height="150px" style="outline:none; margin-top:-20px;"></video>
+
+                                 <video src="video/Enchanting India.mp4" controls="controls"
+                                 poster="tourists/majuli.jpg" width="200px" height="150px" style="outline:none; margin-top:-20px;"></video>
+
+                                 <video src="video/Rajasthan Tourism New Ad - Rajasthan Through Huan's eyes - Huansthan.mp4" controls="controls"
+                                 poster="tourists/manali.jpg" width="200px" height="150px" style="outline:none; margin-top:-20px;"></video>
+
+                                 <video src="video/Meghalaya - Nature lover's dream - 2019 - North east series.mp4" controls="controls"
+                                poster="tourists/ooty.jpg" width="200px" height="150px" style="outline:none; margin-top:-20px;"></video>
+                            </div>
+
+                            <div id="gallary_main">
+                                <div id="gallary_container" onclick="changeImageOnClick(event)">
+                                    <img src="tourists/hampi.jpg" class="gallary_img"/>
+                                    <img src="img/grass-3840x2160-4k-hd-wallpaper-green-drops-dew-sun-rays-3896.jpg" class="gallary_img"/>
+                                    <img src="img/julian-yu-_WuPjE-MPHo-unsplash.jpg" class="gallary_img"/>
+                                    <img src="tourists/1475949226-9875.jpg" class="gallary_img"/>
+                                    <img src="tourists/agra-fort_story_650_013015114748.jpg" class="gallary_img"/>
+                                    <img src="tourists/bijapur_itinerary-cover.jpg" class="gallary_img"/>
+                                    <img src="tourists/Ghats-Banks-on-the-Ganges-River-Hindu-holy-city-on-Ganges-Banaras.jpg" class="gallary_img"/>
+                                    <img src="img/redfort.jpg" class="gallary_img"/>
+                                    <img src="tourists/Places-that-Americans-Visit-in-India.jpg" class="gallary_img"/>
+                                    <img src="tourists/qutub-minar.jpg" class="gallary_img"/>
+                                    <img src="tourists/Where-does-UK-travelers-visit-in-India.jpg" class="gallary_img"/>
+                                    <img src="img/jodhpur.jpg" class="gallary_img"/>
+                                    <img src="img/mumbai.jpg" class="gallary_img"/>
+                                    <img src="tourists/Ghats-Banks-on-the-Ganges-River-Hindu-holy-city-on-Ganges-Banaras.jpg" class="gallary_img"/>
+                                    <img src="tourists/1475949226-9875.jpg" class="gallary_img"/>
+                                    <img src="img/redfort.jpg" class="gallary_img"/>
+                                    <img src="img/trekking.jpg" class="gallary_img"/>
+                                    <img src="img/banaras.jpg" class="gallary_img"/>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+            </div>
+            <div id="trailer">
+                <div id="show_trailer">
+                    <div id="close_btn_div">
+                            <input type="button" value="X" onclick="closeTrailer()" id="close_btn"/>
+                    </div>
+                    <div id="trailer_video">
+                        <video width="100%" height="700px" controls>
+                            <source src="video/Enchanting India.mp4" type="video/mp4">
+                        </video>
+
+                        <!-- <video  src="video/Enchanting India.mp4" 
+                        width="100%" height="700px" controls="controls"/> -->
+                    </div>
+                </div>
+                        
+            </div>
+
+            <div id="feedback">
+                    <div id="feed">
+                        <h2 style="margin-top:20px;font-size: 40px;text-decoration:underline;font-family: 'Raleway', sans-serif;">Our Feedbacks</h2>
+                        <div id="Pone">
+                        <h3 style="margin-top: 70px;">"This site is amazing.I loved the experience and Dargeeling is
+                             one of the most beautuful places I have seen."</h3></div>
+                        <div id="Ptwo">
+                        <h3 style="margin-top: 70px;">"Hii, If i say truth...this is amazing. India is incredible.I love India and Dargeeling is just Wooww!!"</h3></div>
+                        <div id="Pthree">
+                        <h3 style="margin-top: 70px;">"I loved the experience and Dargeeling is
+                            one of the most beautuful places I have ever seen."</h3></div>
+                        <div id="Pfour">
+                        <h3 style="margin-top: 70px;">"Superb , amazing.I loved the experience and Dargeeling is
+                            one of the most beautuful places I have seen."</h3></div>
+                        <div id="Pfive">
+                        <h3 style="margin-top: 70px;">"India is Incredible.I loved the experience and Dargeeling is
+                            one of the most beautuful places I have seen."</h3></div>                 
+                    </div>
+                    <fieldset id="feed_img">
+                    <legend><img onclick="showOne()" class="fimg" src="img/ac5.jfif"/>
+                    <img onclick="showTwo()" class="fimg" src="img/download (2).jfif"/>
+                    <img onclick="showThree()" class="fimg" src="img/download (1).jfif"/>
+                    <img onclick="showFour()" class="fimg" src="img/download.jfif"/>
+                    <img onclick="showFive()" class="fimg" src="img/spider4.jpg"/></legend>
+                    </fieldset>
+                </div>
+        </main>
+        <div id="footer">
+                <div class="copyright">
+                    <h1><img src="img/logo.png" width="100px" height="100px"/>
+                        COPYRIGHT  &COPY; tourGuide 2019</h1>
+                        <h2><span style="color: orange; letter-spacing: 1px;">info@tourguide.com</span> - Jalandhar, Punjab, 144411.</h2>
+                </div>
+                <div class="list_div">
+                    <ul>
+                        <a href="#"><li>Home</li></a>
+                        <a href="#"><li>Trips</li></a>
+                        <a href="#"><li>Planning</li></a>
+                        <a href="#"><li>About</li></a>
+                    </ul>
+                </div>
+                <div class="list_div">
+                    <ul>
+                        <a href="#"><li>FAQ</li></a>
+                        <a href="#"><li>Guides</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Contact</li></a>
+                    </ul>
+                </div>
+                <div class="list_div">
+                    <i style="background:#343433;padding: 10px 15px 10px 15px; color: white;margin-top: 20px;"
+                     class="fab fa-facebook-f"></i>
+                    <i style="background:#343433;padding: 10px 15px 10px 15px; color: white;margin-top: 20px;"
+                     class="far fa-envelope"></i>
+                    <br><br>
+                    <strong style="color: white; font-size: 16px; font-family: 'Raleway', sans-serif;letter-spacing: 1px;">
+                        Design by <span style="color: orange; font-size: 16px; font-family: 'Raleway', sans-serif;letter-spacing: 1px;">Adarsh Singh Tiwari.</span></strong> <br><br>
+                        <strong style="color: white; font-size: 16px; font-family: 'Raleway', sans-serif;letter-spacing: 1px;">
+                            Marketing by <span style="color: orange; font-size: 16px; font-family: 'Raleway', sans-serif;letter-spacing: 1px;">yourGuides.</span></strong>
+                    
+                </div>     
+            </div>
+        
+        <script>
+
+        function changeImageOnClick(event){
+            document.getElementById('show_gallary_video').style.display = "none";
+            document.getElementById('show_gallary_img').style.display = "block";
+            event = event || window.event;
+            var targetElement = event.target || event.srcElement;
+        document.getElementById('show_gallary_img').src = targetElement.getAttribute('src');
+        }
+
+        function changeVideoOnClick(event){
+            document.getElementById('show_gallary_video').style.display = "block";
+            document.getElementById('show_gallary_img').style.display = "none";
+            event = event || window.event;
+            var targetElement = event.target || even.srcElement;
+            document.getElementById('show_gallary_video').src = targetElement.getAttribute('src');
+        }
+
+        function showOne(){
+                document.getElementById('Pone').style.display = "block";
+                document.getElementById('Ptwo').style.display = "none";
+                document.getElementById('Pthree').style.display = "none";
+                document.getElementById('Pfour').style.display = "none";
+                document.getElementById('Pfive').style.display = "none";
+            }
+            function showTwo(){
+                document.getElementById('Pone').style.display = "none";
+                document.getElementById('Ptwo').style.display = "block";
+                document.getElementById('Pthree').style.display = "none";
+                document.getElementById('Pfour').style.display = "none";
+                document.getElementById('Pfive').style.display = "none";
+            }
+            function showThree(){
+                document.getElementById('Pone').style.display = "none";
+                document.getElementById('Ptwo').style.display = "none";
+                document.getElementById('Pthree').style.display = "block";
+                document.getElementById('Pfour').style.display = "none";
+                document.getElementById('Pfive').style.display = "none";
+            }
+            function showFour(){
+                document.getElementById('Pone').style.display = "none";
+                document.getElementById('Ptwo').style.display = "none";
+                document.getElementById('Pthree').style.display = "none";
+                document.getElementById('Pfour').style.display = "block";
+                document.getElementById('Pfive').style.display = "none";
+            }
+            function showFive(){
+                document.getElementById('Pone').style.display = "none";
+                document.getElementById('Ptwo').style.display = "none";
+                document.getElementById('Pthree').style.display = "none";
+                document.getElementById('Pfour').style.display = "none";
+                document.getElementById('Pfive').style.display = "block";
+            }
+
+            function showTrailer(){
+                document.getElementById('trailer').style.display = "block";
+            }
+            function closeTrailer(){
+                document.getElementById('trailer').style.display = "none";
+            }
+
+            function searchAll(){
+                var a = document.getElementById('search').value;
+                if(a=="dargeeling"){
+                    window.open('detail.html');
+                }
+                else{
+                    alert('No location Found! Try again.')
+                }
+            }
+        </script>
+    </body>
+</html>

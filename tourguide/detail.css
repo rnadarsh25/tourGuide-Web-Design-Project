@@ -1,0 +1,626 @@
+body{
+    margin-top: 0px;
+    background: whitesmoke;
+}
+#heading{
+    float: left;
+    width: 28%;
+    border: transparent;
+    color: #00CD66;
+    font-size: 20px;
+    margin-left: 1px;
+    font-family: 'Play', sans-serif;
+/* font-family: 'Exo', sans-serif;*/
+    /*font-family: 'Satisfy', cursive;*/
+    /*font-family: 'Great Vibes', cursive;*/
+    /*font-family: 'Orbitron', sans-serif;*/
+    /*font-family: 'Playfair Display SC', serif;*/
+    font-family: 'Prata', serif;
+    /*font-family: 'Arapey', serif;*/
+    /*font-family: 'Tangerine', cursive;*/
+}
+#para1{
+    /*font-family: 'Tangerine', cursive;*/
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+
+}
+#search_box{
+    text-align: center;
+    width: 42%;
+    float: left;
+    border: transparent;
+    height: 84px;
+    text-align: center;
+}
+#search{
+    width: 500px;
+    height: 51px;
+    line-height: 51px;
+    border: 1px solid #00CD66;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 0px 0px 0px 10px;
+    margin-top: 15px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    outline: none;
+}
+#login_div{
+    text-align: right;
+    width: 29.5%;
+    float: left;
+    border: transparent;
+}
+#login{
+    width: 150px;
+    height: 84px;
+    line-height: 84px;
+    background: transparent;
+    border: transparent;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: darkgreen;
+    font-weight: bold;
+    outline: none;
+    margin-right: -3px;
+}
+#login:hover{
+    background: darkgreen;
+    cursor: pointer;
+    color: white;
+}
+#details_nav{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+#details_nav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#details_nav ul li{
+    float: left;
+    width: 179.5px;
+    height: 40px;
+    line-height: 40px;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+    text-align: center;
+    background: #00CD66;
+    color: white;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+#details_nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+#details_nav ul li ul li{
+    width: 300px;
+    text-align: left;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: none;
+}
+#details_nav ul li:hover{
+    background: darkgreen;
+    cursor: pointer;
+}
+#details_nav ul li:hover ul li{
+    display: block;
+}
+#details_nav ul .active{
+    background: #df293a;
+}
+#back_btn{
+    float: left;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background: #df293a;
+    border: transparent;
+    margin: 10px 0px 0px 45px;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+#back_btn:hover{
+    cursor: pointer;
+}
+#cont_btn{
+    float: right;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background: #df293a;
+    border: transparent;
+    margin: 10px 35px 0px 0px;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+#cont_btn:hover{
+    cursor: pointer;
+}
+
+
+#main2{
+    position: absolute;
+    top: 180px;
+    margin: 0px 30px 20px 60px;
+    width: 90%;
+    border: transparent;
+    height: 400px;
+    padding: 0px;
+    background: white;
+}
+#main_info{
+}
+#info_image{
+    float:left;
+    width: 550px;
+}
+#name_location{
+    float: left;
+    width: 386px;
+    height: 100px;
+    margin-left: 10px;
+    /* border: 1px solid black; */
+}
+#ratings{
+    float: left;
+    width: 198px;
+    height: 100px;
+    border: transparent;
+    text-align: right;
+}
+#rating_btn{
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    font-size: 16px;
+    background: #df293a;
+    border: transparent;
+    border-radius: 5px;
+    margin: 10px 20px 10px 10px;
+}
+#offers_hotels{
+    margin-top: 20px;
+    float: left;
+    width: 586px;
+    height: 100px;
+    border:transparent;
+}
+#get_cus{
+    background: #df293a;
+    color: white;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    height: 40px;
+    line-height: 40px;
+    border: transparent;
+    border-radius: 5px;
+    margin-left: 10px;
+    outline: none;
+}
+#get_cus:hover{
+    cursor: pointer;
+}
+#hotels{
+    background: white;
+    color: skyblue;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    margin-left: 10px;
+    outline: none;
+}
+#hotels:hover{
+    background: skyblue;
+    color: white;
+    cursor: pointer;
+}
+
+#weather{
+    margin: 50px 0px 0px 10px;
+    float: left;
+    width: 586px;
+    height: 200px;
+    border: transparent;
+}
+.div1{
+    float: left;
+    width: 286px;
+    margin: 10px 0px 10px 0px;
+}
+#all_places{
+    position: absolute;
+    top: 600px;
+    margin: 60px;
+    border: 1px solid black;
+    width: 90%;
+}
+#all_places_two{
+    position: absolute;
+    top: 600px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    margin: 60px;
+    border: 1px solid white;
+    width: 90%;
+    color: #df293a;
+}
+.exp_btn{
+    background: #df293a;
+    color: white;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    border: transparent;
+    border-radius: 5px;
+    height: 35px;
+    line-height: 35px;
+    outline: none;    
+    display: none;
+    transition: all .5s ease-in-out;
+}
+#all_places_two a{
+    color: #df293a;
+}
+.exp_btn:hover{
+    cursor: pointer;
+}
+
+#railway{
+    border: transparent;
+    margin: 1px;
+    float: left;
+    width: 450px;
+    height: 250px;  
+    transition: all .5s ease-in-out; 
+}
+#railway:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#railway:hover .exp_btn{
+    display: inline;
+}
+#tiger_hills{
+    border: transparent;
+    margin: 1px;
+    float: right;
+    width: 698px;
+    height: 500px;
+    transition: all .5s ease-in-out;
+}
+#tiger_hills:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#tiger_hills:hover .exp_btn{
+    display: inline;
+}
+#batasia_loop{
+    border: transparent;
+    margin: 1px;
+    float: left;
+    width: 450px;
+    height: 248px;
+    transition: all .5s ease-in-out;
+}
+#batasia_loop:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#batasia_loop:hover .exp_btn{
+    display: inline;
+}
+#ropeway{
+    border: transparent;
+    margin: 1px;
+    float: left;
+    width: 450px;
+    height: 350px;
+    transition: all .5s ease-in-out;
+}
+#ropeway:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#ropeway:hover .exp_btn{
+    display: inline;
+}
+#rock_garden{
+    border: transparent;
+    margin: 1px;
+    float: left;
+    width: 450px;
+    height: 350px;
+    transition: all .5s ease-in-out;
+}
+#rock_garden:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#rock_garden:hover .exp_btn{
+    display: inline;
+}
+#singalia{
+    border: transparent;
+    margin: 1px;
+    float: left;
+    width: 450px;
+    height: 350px;
+    transition: all .5s ease-in-out;
+}
+#singalia:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#singalia:hover .exp_btn{
+    display: inline;
+}
+#teesta_raft{
+    border: transparent;
+    margin: 1px;
+    float: left;
+    width: 698px;
+    height: 500px;
+    transition: all .5s ease-in-out;
+}
+#teesta_raft:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#teesta_raft:hover .exp_btn{
+    display: inline;
+}
+#tea_plant{
+    border: transparent;
+    margin: 1px;
+    float: left;
+    width: 450px;
+    height: 250px;
+    transition: all .5s ease-in-out;
+}
+#tea_plant:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#tea_plant:hover .exp_btn{
+    display: inline;
+}
+#monestry{
+    border: transparent;
+    margin: 1px;
+    float: right;
+    width: 450px;
+    height: 248px;
+    transition: all .5s ease-in-out;
+}
+#monestry:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#monestry:hover .exp_btn{
+    display: inline;
+}
+#trekking{
+    border: transparent;
+    margin: 1px;
+    float: left;
+    width: 548px;
+    height: 300px;
+    transition: all .5s ease-in-out;
+}
+#trekking:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#trekking:hover .exp_btn{
+    display: inline;
+}
+#tinchuley{
+    border: transparent;
+    margin: 1px;
+    float: left;
+    width: 600px;
+    height: 300px;
+    transition: all .5s ease-in-out;
+}
+#tinchuley:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#tinchuley:hover .exp_btn{
+    display: inline;
+}
+
+#add1{
+    width: 246px;
+    height: 700px;
+    float: right;
+    border: transparent;
+}
+#add2{
+    float: left;
+    width: 100%;
+    height: 100px;
+    border: transparent;
+    margin-top: 20px;
+}
+#add1, #add2:hover{
+    cursor: pointer;
+}
+
+#feedback{
+    border: transparent;
+    width: 98.6%;
+    height: 500px;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+    background: #00CD66;
+    color: white;
+    position: absolute;
+    top: 175rem;
+}
+#feed{
+    border: transparent;
+    height:200px;
+    width: 100%; 
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+#Pone{
+    margin-left: 200px;
+    display: block;
+    width: 70%;
+    border: transparent;
+    position: relative;
+    font-size: 20px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: 100;
+    color: white;
+}
+#Ptwo{
+    margin-left: 200px;
+    display: none;
+    width: 70%;
+    border: transparent;
+    position: relative;
+    font-size: 20px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: 100;
+}
+#Pthree{
+    margin-left: 200px;
+    display: none;
+    width: 70%;
+    border: transparent;
+    position: relative;
+    font-size: 20px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: 100;
+}
+#Pfour{
+    margin-left: 200px;
+    display: none;
+    width: 70%;
+    border: transparent;
+    position: relative;
+    font-size: 20px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: 100;
+}
+#Pfive{
+    margin-left: 200px;
+    display: none;
+    font-size: 20px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: 100;
+    width: 70%;
+    border: transparent;
+    position: relative;
+}
+#feed_img{
+    border: 1px solid white;
+    margin-top: 40px;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: none;
+}
+.fimg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: all .5s ease-in-out;
+}
+.fimg:hover{
+    cursor: pointer;
+    width: 170px;
+    height: 170px;
+}
+
+#footer{
+    width: 98.6%;
+    height: 400px;
+    background: darkgreen;
+    position: absolute;
+    top: 207.55rem;
+}
+.copyright{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    border-bottom: 1px solid white;
+    font-size: 13px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+}
+.list_div{
+    width: 25%;
+    height: 200px;
+    border: transparent;
+    float: left;
+}
+.list_div ul{
+    list-style: none;
+}
+.list_div ul a{
+    text-decoration: none;
+    color: white;
+}
+.list_div ul a li{
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    border-bottom: 1px groove grey;
+    font-family: 'Raleway', sans-serif;
+}
+.list_div ul a li:hover{
+    color: orange;
+}
+
+#left{
+    float: left;
+    height: 170rem;
+    border-right: 15px solid #00CD66;
+    width: 0px;
+    border-top-right-radius: 30%;  
+}
+#right{
+    float: right;
+    height: 170rem;
+    border-right: 15px solid #00CD66;
+    width: 0px;
+    margin-right:2px;
+    border-top-left-radius: 30%; 
+}

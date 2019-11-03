@@ -1,0 +1,254 @@
+body{
+    margin-top: 0px;
+    background: whitesmoke;
+}
+#heading{
+    float: left;
+    width: 28%;
+    border: transparent;
+    color: #00CD66;
+    font-size: 20px;
+    margin-left: 1px;
+    font-family: 'Play', sans-serif;
+/* font-family: 'Exo', sans-serif;*/
+    /*font-family: 'Satisfy', cursive;*/
+    /*font-family: 'Great Vibes', cursive;*/
+    /*font-family: 'Orbitron', sans-serif;*/
+    /*font-family: 'Playfair Display SC', serif;*/
+    font-family: 'Prata', serif;
+    /*font-family: 'Arapey', serif;*/
+    /*font-family: 'Tangerine', cursive;*/
+}
+#para1{
+    /*font-family: 'Tangerine', cursive;*/
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+
+}
+#search_box{
+    text-align: center;
+    width: 42%;
+    float: left;
+    border: transparent;
+    height: 84px;
+    text-align: center;
+}
+#search{
+    width: 500px;
+    height: 51px;
+    line-height: 51px;
+    border: 1px solid #00CD66;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 0px 0px 0px 10px;
+    margin-top: 15px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    outline: none;
+}
+#login_div{
+    text-align: right;
+    width: 29.5%;
+    float: left;
+    border: transparent;
+}
+#login{
+    width: 150px;
+    height: 84px;
+    line-height: 84px;
+    background: transparent;
+    border: transparent;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: darkgreen;
+    font-weight: bold;
+    outline: none;
+}
+#login:hover{
+    background: darkgreen;
+    cursor: pointer;
+    color: white;
+}
+#nav_div ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#nav_div ul li{
+    float: left;
+    border-right: 1px solid white;
+    background: #00CD66;
+    color: white;
+    width: 251px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+/* #nav_div ul #east{
+    background: #df293a;
+} */
+#nav_div ul li:hover{
+    background: darkgreen;
+    cursor: pointer;
+}
+
+/*==========================================list==================================*/
+#list1{
+    float: left;
+    width: 72%;
+    border: transparent;
+    position: absolute;
+    top: 128px;
+}
+#list2{
+    float: left;
+    width: 72%;
+    border: transparent;
+    position: absolute;
+    top: 128px;
+    display: none;
+}
+#list3{
+    float: left;
+    width: 72%;
+    border: transparent;
+    position: absolute;
+    top: 128px;
+    display: none;
+}
+#list4{
+    float: left;
+    width: 72%;
+    border: transparent;
+    position: absolute;
+    top: 128px;
+    display: none;
+}
+/*=========================================detail============================*/
+#detail{
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    border: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+}
+/*=======================================singleitem================================*/
+#singleitem{
+    margin-top: 30px;
+    width: 100%;
+    height: 250px;
+    border: transparent;
+    background: white;
+}
+#tour_gift{
+    float: left;
+    border: transparent;
+    width: 35%;
+    margin: 10px 0px 0px 10px;
+    font-size: 12px; 
+    font-family: 'Raleway', sans-serif;
+}
+#quote_btn{
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    padding: 7px;
+    background: #00CD66;
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+    outline: none;
+}
+#quote_btn:hover{
+    background: darkgreen;
+    color: white;
+    cursor: pointer;
+}
+#continue_btn{
+    position: relative;
+    top: 75px;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    padding: 7px;
+    background: #00CD66;
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+    outline: none;
+}
+#continue_btn:hover{
+    background: darkgreen;
+    color: white;
+    cursor: pointer;
+}
+
+.icon{
+    width: 40px;
+    height: 20px;
+    border: transparent;
+    margin: 5px;
+    padding: 7px;
+}
+
+
+/*-========================================================help_div===========================*/
+#help_section{
+    width: 25.2%;
+    float: right;
+    border: transparent;
+    border-left: 2px solid white;
+    text-align: center;
+}
+#help_section img:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+
+#footer{
+    width: 98.75%;
+    height: 400px;
+    background: darkgreen;
+    position: absolute;
+    top: 92.1rem;
+}
+.copyright{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    border-bottom: 1px solid white;
+    font-size: 13px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+}
+.list_div{
+    width: 25%;
+    height: 200px;
+    border: transparent;
+    float: left;
+}
+.list_div ul{
+    list-style: none;
+}
+.list_div ul a{
+    text-decoration: none;
+    color: white;
+}
+.list_div ul a li{
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    border-bottom: 1px groove grey;
+    font-family: 'Raleway', sans-serif;
+}
+.list_div ul a li:hover{
+    color: orange;
+}
